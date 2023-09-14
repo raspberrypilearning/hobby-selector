@@ -24,7 +24,7 @@ What happens if you **shake** the micro:bit?
 What happens if you click the **logo**?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_gsk7kk1AJWXy" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S47133-08356-20146-01355" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
 </div>
 
 --- /task ---
@@ -428,6 +428,10 @@ When you have downloaded your program to your micro:bit, it will run immediately
 **Test**: You should see a random icon each time you shake the micro:bit.
 
 --- /task ---
+
+### Completed project
+
+If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355).
 
 ### Upgrade your project
 
