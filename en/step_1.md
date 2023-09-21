@@ -11,7 +11,7 @@ In this project, you will to make a **random hobby selector**.
 You will: 
 + Make the micro:bit light up and display images
 + Use random numbers to make choices
-+ Use <code style="background-color: #00A4A6">if</code> blocks to control which images are displayed
++ Use `if`{:class='microbitlogic'} blocks to control which images are displayed
 + Use the logo or a button to clear the display
 
 --- no-print ---
