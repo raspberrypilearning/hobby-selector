@@ -11,7 +11,7 @@ In this project, you will to make a **random hobby selector**.
 You will:
 + Make the micro:bit light up and display images
 + Use random numbers to make choices
-+ Use <code style="background-color: #00A4A6">if</code> blocks to control which images are displayed
++ Use `if`{:class='microbitlogic'} blocks to control which images are displayed
 + Use the logo or a button to clear the display
 
 --- no-print ---
@@ -23,7 +23,7 @@ You will:
 What happens if you **shake** the micro:bit? What happens if you click the **logo**?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_gsk7kk1AJWXy" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S47133-08356-20146-01355" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
 </div>
 
 --- /task ---
@@ -91,21 +91,25 @@ In the centre, there is the **blocks panel**, which is colour-coded and allows y
 
 On the right-hand side, there is the **code editor panel**, where you drag and drop blocks to create your program.
 
-The MakeCode editor panel already contains two blocks: <code style="background-color: #1e90ff">on start</code> and <code style="background-color: #1e90ff">forever</code>.
+The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
 
 ### Show icon
 
-You will use the <code style="background-color: #1e90ff">forever</code> block to see how the LEDs on the simulator work.
+You will use the `forever`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
 
 --- task ---
 
-Click on the <code style="background-color: #1E90FF">Basic</code> block menu in the blocks panel. This will expand to show you the blocks available.
+Click on the `Basic`{:class='microbitbasic'} block menu in the blocks panel. This will expand to show you the blocks available.
 
 <img src="images/basic-blocks.png" alt="The Basic block menu with the 'show icon' block highlighted." width="300" />
 
-Drag the <code style="background-color: #1e90ff">show icon</code> block and drop it **inside** the <code style="background-color: #1e90ff">forever</code> block. It should fit in place like a puzzle piece.
+Drag the `show icon`{:class='microbitbasic'} block and drop it **inside** the `forever`{:class='microbitbasic'} block. It should fit in place like a puzzle piece.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iVKhocCVxR3f" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+})
+```
 
 --- /task ---
 
@@ -164,7 +168,7 @@ Each hobby will be linked to a number and you will create a variable so you can 
 
 --- task ---
 
-Open the <code style="background-color: #DC143C">Variables</code> menu, and click **Make a variable**.
+Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
 
 <img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted." width="350" />
 
@@ -178,65 +182,96 @@ Name the new variable `activity`, then click the **OK** button.
 
 --- /task ---
 
-You will now see that there are new blocks available. These blocks let you set, change, or use the value stored in the `activity` variable.
+You will now see that there are new blocks available. These blocks let you set, change, or use the value stored in the `activity`{:class='microbitvariables'} variable.
 
 <img src="images/variable-blocks.png" alt="The Variables block menu - with new blocks to set the value, to change the value, and to use the value of the 'activity' variable in your code." width="350" />
 
 --- task ---
 
-Drag the <code style="background-color: #dc143c">set</code> block inside the <code style="background-color: #1e90ff">on start</code> block.
+Drag the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_YbT2My3k2aXu" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let activity = 0
+```
 
 --- /task ---
 
 ### Which hobby will display?
 
-When <code style="background-color: #DC143C">activity</code> is set to `1`, the icon for your first hobby should display. When <code style="background-color: #DC143C">activity</code> is set to `2`, the icon for the next hobby should display.
+When `activity`{:class='microbitvariables'} is set to `1`, the icon for your first hobby should display. When `activity`{:class='microbitvariables'} is set to `2`, the icon for the next hobby should display.
 
 You will use `if... then` blocks to do this.
 
 --- task ---
 
-Open the <code style="background-color: #00A4A6">Logic</code> menu and choose the <code style="background-color: #00a4a6">if</code> block.
+Open the `Logic`{:class='microbitlogic'} menu and choose the `if`{:class='microbitlogic'} block.
 
 <img src="images/if-block.png" alt="The Logic block menu open with the 'if' block highlighted." width="350" />
 
-Drag the <code style="background-color: #00a4a6">if</code> block inside the `forever` loop block. Place it **above** your icon block.
+Drag the `if`{:class='microbitlogic'} block inside the `forever`{:class='microbitbasic'} loop block. Place it **above** your `show icon`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(250px + 5em);width:75%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_3fXJCKJ7LTAu" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (true) {
+
+    }
+    basic.showIcon(IconNames.Ghost)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the comparison block <code style="background-color: #00a4a6">0 = 0</code>.
+From the `Logic`{:class='microbitlogic'} menu, drag out the comparison block `0 = 0`{:class='microbitlogic'}.
 
 <img src="images/condition-block.png" alt="The Logic block menu with the comparison block '0 = 0' highlighted." width="350" />
 
-Place it inside the `true` space within the <code style="background-color: #00a4a6">if</code> block.
+Place it inside the `true` space within the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(275px + 5em);width:75%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_CPPLmMhR29Cg" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (0 == 0) {
+
+    }
+    basic.showIcon(IconNames.Ghost)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Go back to the <code style="background-color: #DC143C">Variables</code> menu and pick the small block that says <code style="background-color: #dc143c">activity</code>.
+Go back to the `Variables`{:class='microbitvariables'} menu and pick the small block that says `activity`{:class='microbitvariables'}.
 
 Drag this block to the **first** `0` in your new comparison block.
 
 Change the second `0` to `1`.
 
-<div style="position:relative;height:calc(225px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_FpsdqdfWx9cu" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    let activity = 0
+    if (activity == 1) {
+
+    }
+    basic.showIcon(IconNames.Ghost)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Drag your <code style="background-color: #1e90ff">show icon</code> block **inside** the <code style="background-color: #00a4a6">if</code> block.
+Drag your `show icon`{:class='microbitbasic'} block **inside** the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_CJoVdpb0YMFy" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    let activity = 0
+    if (activity == 1) {
+        basic.showIcon(IconNames.Ghost)
+    }
+})
+```
 
 --- /task ---
 
@@ -248,7 +283,7 @@ When you make a change to a code block, the simulator will restart.
 
 You may have noticed that nothing appeared on the LEDs after your last change.
 
-Find your <code style="background-color: #dc143c">set</code> block again. Hint: it's inside the <code style="background-color: #1e90ff">on start</code> block.
+Find your `set`{:class='microbitvariables'} block again. Hint: it's inside the `on start`{:class='microbitbasic'} block.
 
 **Change** the `0` to `1`.
 
@@ -262,7 +297,7 @@ Make sure you **set the value of the activity variable back to `0`** ready for t
 
 ### Add more hobbies
 
-To add more hobby options to your program, you will need to add more conditions to your <code style="background-color: #00a4a6">if</code> block.
+To add more hobby options to your program, you will need to add more conditions to your `if`{:class='microbitlogic'} block.
 
 --- task ---
 
@@ -274,13 +309,13 @@ Click on the `+` symbol at the bottom of the `if` block. This will create an `el
 
 --- task ---
 
-Click on the `+` symbol below the <code style="background-color: #00a4a6">else</code>. This will create an <code style="background-color: #00a4a6">else if</code>. Do this one more time so you have two <code style="background-color: #00a4a6">else if</code> blocks.
+Click on the `+` symbol below the `else`{:class='microbitlogic'}. This will create an `else if`{:class='microbitlogic'}. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
 
 --- /task ---
 
 --- task ---
 
-Now click on the `-` symbol next to the <code style="background-color: #00a4a6">else</code> to remove it.
+Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove it.
 
 ![Using the + symbol, an else and two else ifs are added to a condition. Next, the else is removed by clicking the - symbol next to it.](images/adding-ifs.gif)
 
@@ -288,13 +323,13 @@ Now click on the `-` symbol next to the <code style="background-color: #00a4a6">
 
 --- task ---
 
-Right click on the whole <code style="background-color: #00a4a6">=</code> block in the first <code style="background-color: #00a4a6">if</code> block.
+Right click on the whole `=`{:class='microbitlogic'} block in the first `if`{:class='microbitlogic'} block.
 
 Click just to the left of the activity variable, or just to the right of the value `0`, to make sure you select the whole block.
 
 Click **Duplicate** to make a copy.
 
-Drag the duplicated <code style="background-color: #00a4a6">=</code> block into the first <code style="background-color: #00a4a6">else if</code> block. Then change the number `1` to a `2`.
+Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:class='microbitlogic'} block. Then change the number `1` to a `2`.
 
 ![The comparison block in the first if block is right clicked, and a menu appears. The first option, 'Duplicate', is clicked. A new version of the comparison block is created, and dragged into the first else if block.](images/duplicate-comparison.gif)
 
@@ -302,9 +337,20 @@ Drag the duplicated <code style="background-color: #00a4a6">=</code> block into 
 
 --- task ---
 
-Duplicate the <code style="background-color: #00a4a6">=</code> block one more time and drag it into the second <code style="background-color: #00a4a6">else if</code> block. Then change the number to `3`.
+Duplicate the `=`{:class='microbitlogic'} block one more time and drag it into the second `else if`{:class='microbitlogic'} block. Then change the number to `3`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_9h6MfxbmaFYu" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    let activity = 0
+    if (activity == 1) {
+        basic.showIcon(IconNames.Ghost)
+    } else if (activity == 2) {
+
+    } else if (activity == 3) {
+
+    }
+})
+```
 
 --- /task ---
 
@@ -314,7 +360,7 @@ Duplicate the <code style="background-color: #00a4a6">=</code> block one more ti
 
 **Choose** two more images to represent your hobbies.
 
-You can use the <code style="background-color: #1e90ff">show icon</code> block or create your own icon using the <code style="background-color: #1e90ff">show leds</code> block.
+You can use the `show icon`{:class='microbitbasic'} block or create your own icon using the `show leds`{:class='microbitbasic'} block.
 
 --- collapse ---
 
@@ -322,7 +368,7 @@ You can use the <code style="background-color: #1e90ff">show icon</code> block o
 title: Using the show leds block
 ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1e90ff">show leds</code> block inside an <code style="background-color: #00a4a6">else if</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside an `else if`{:class='microbitlogic'} block.
 
 <img src="images/show-leds.png" alt="The Basic menu with the 'show leds' block highlighted." width="350" />
 
@@ -340,7 +386,7 @@ You can click each of the squares to pick which ones you want to light up. White
 
 --- task ---
 
-Drag the <code style="background-color: #d400d4">on shake</code> block from the <code style="background-color: #D400D4">Input</code> menu.
+Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
 
 <img src="images/on-shake.png" alt="The Input menu with the 'on shake' block highlighted." width="350" />
 
@@ -348,19 +394,24 @@ Drag the <code style="background-color: #d400d4">on shake</code> block from the 
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #dc143c">set</code> block inside the <code style="background-color: #d400d4">on shake</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block inside the `on shake`{:class='microbitinput'} block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, drag the <code style="background-color: #9400d3">pick random</code> block to the `0` of the <code style="background-color: #dc143c">set</code> block.
+From the `Math`{:class='microbitmath'} menu, drag the `pick random`{:class='microbitmath'} block to the `0` of the `set`{:class='microbitvariables'} block.
 
 <img src="images/pick-random.png" alt="The Math menu with the 'pick random 0 to 10' block highlighted." width="350" />
 
 Change the numbers `0 to 10` to `1 to 3`.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_HeDV38b0odfW" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let activity = 0
+input.onGesture(Gesture.Shake, function () {
+    activity = randint(1, 3)
+})
+```
 
 --- /task ---
 
@@ -370,7 +421,7 @@ Use the touch-sensitive logo (V2) or a button (V1) to turn off the LEDs.
 
 --- task ---
 
-Drag the <code style="background-color: #d400d4">on logo pressed</code> block from the <code style="background-color: #D400D4">Input</code> menu.
+Drag the `on logo pressed`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
 
 <img src="images/onlogo-pressed.png" alt="The Input menu with the 'on logo pressed' block highlighted." width="350" />
 
@@ -382,7 +433,7 @@ title: V1 micro:bit users
 
 The logo input is only available on the V2 micro:bit.
 
-For the V1 micro:bit, use the <code style="background-color: #d400d4">on button</code> block from the <code style="background-color: #D400D4">Input</code> menu.
+For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
 
 <img src="images/button-a.png" alt="The Input menu with the 'on button A pressed' block highlighted." width="350" />
 
@@ -392,17 +443,27 @@ For the V1 micro:bit, use the <code style="background-color: #d400d4">on button<
 
 --- task ---
 
-Drag the <code style="background-color: #1e90ff">clear screen</code> block from the <code style="background-color: #1E90FF">Basic</code> menu and place it inside the <code style="background-color: #d400d4">on logo pressed</code> block (or the <code style="background-color: #d400d4">on button</code> block for V1).
+Drag the `clear screen`{:class='microbitbasic'} block from the `Basic`{:class='microbitbasic'} menu and place it inside the `on logo pressed`{:class='microbitinput'} block (or the `on button`{:class='microbitinput'} block for V1).
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_RKbbriA5XD9a" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.clearScreen()
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Now drag the <code style="background-color: #dc143c">set</code> block from the <code style="background-color: #DC143C">Variables</code> menu and place it below the <code style="background-color: #1e90ff">clear screen</code> block.
+Now drag the `set`{:class='microbitvariables'} block from the `Variables`{:class='microbitvariables'} menu and place it below the `clear screen`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iVKhocCVxR3f" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>0</div>
+```microbit
+let activity = 0
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.clearScreen()
+    activity = 0
+})
+```
 
 --- /task ---
 
@@ -427,6 +488,12 @@ When you have downloaded your program to your micro:bit, it will run immediately
 **Test**: You should see a random icon each time you shake the micro:bit.
 
 --- /task ---
+
+[[[microbit-share]]]
+
+### Completed project
+
+If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355).
 
 ### Upgrade your project
 
