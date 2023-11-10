@@ -11,7 +11,7 @@ In dit project ga je een **hobby kiezer** maken.
 Je gaat:
 + De micro:bit laten oplichten en afbeeldingen weergeven
 + Willekeurige getallen gebruiken om keuzes te maken
-+ Use `if`{:class='microbitlogic'} blocks to control which images are displayed
++ Gebruik `als`{:class='microbitlogic'} blokken om te bepalen welke afbeeldingen worden weergegeven
 + Het logo of een knop gebruiken om het scherm te wissen
 
 --- no-print ---
@@ -168,7 +168,7 @@ Elke hobby wordt aan een getal gekoppeld en je maakt een variabele zodat je kunt
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
+Open het `Variabelen`{:class='microbitvariables'} menu en klik op **Maak een variabele**.
 
 <img src="images/variable-menu.png" alt="Het variabelenblokmenu wordt geopend met de knop 'Maak een variabele' gemarkeerd." width="350" />
 
@@ -182,13 +182,13 @@ Noem de nieuwe variabele `activiteit` en klik vervolgens op de knop **OK**.
 
 --- /task ---
 
-Je zult nu zien dat er nieuwe blokken beschikbaar zijn. These blocks let you set, change, or use the value stored in the `activity`{:class='microbitvariables'} variable.
+Je zult nu zien dat er nieuwe blokken beschikbaar zijn. Met deze blokken kun je de waarde die is opgeslagen in de variabele `activiteit`{:class='microbitvariables'} instellen, wijzigen of gebruiken.
 
 <img src="images/variable-blocks.png" alt="Het variabelen blokmenu - met nieuwe blokken om de waarde in te stellen, te wijzigen en de waarde van de 'activiteit' variabele te gebruiken in je code." width="350" />
 
 --- task ---
 
-Drag the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
+Sleep het `stel in op`{:class='microbitvariables'} blok naar het bewerkingspaneel en plaats deze in het `bij opstart`{:class='microbitbasic'} blok.
 
 ```microbit
 let activity = 0
@@ -198,7 +198,7 @@ let activity = 0
 
 ### Welke hobby wordt weergegeven?
 
-When `activity`{:class='microbitvariables'} is set to `1`, the icon for your first hobby should display. When `activity`{:class='microbitvariables'} is set to `2`, the icon for the next hobby should display.
+Wanneer `activiteit`{:class='microbitvariables'} is ingesteld op `1`, moet het pictogram van je eerste hobby worden weergegeven. Wanneer `activiteit`{:class='microbitvariables'} is ingesteld op `2`, moet het pictogram van je eerste hobby worden weergegeven.
 
 Je gebruikt hiervoor `als... dan` blokken.
 
@@ -227,7 +227,7 @@ From the `Logic`{:class='microbitlogic'} menu, drag out the comparison block `0 
 
 <img src="images/condition-block.png" alt="Het Logisch blokmenu met het vergelijkingsblok '0=0' gemarkeerd." width="350" />
 
-Place it inside the `true` space within the `if`{:class='microbitlogic'} block.
+Plaats dit in het `waar`{:class='microbitlogic'} deel van het `als`{:class='microbitlogic'} blok.
 
 ```microbit
 basic.forever(function () {
@@ -297,7 +297,7 @@ Zorg ervoor dat je **de waarde van de activiteitsvariabele weer op `0` zet**, zo
 
 ### Voeg meer hobby's toe
 
-To add more hobby options to your program, you will need to add more conditions to your `if`{:class='microbitlogic'} block.
+Om meer hobbyopties aan je programma toe te voegen, moet je meer voorwaarden toevoegen aan je `als`{:class='microbitlogic'} blok.
 
 --- task ---
 
@@ -309,7 +309,7 @@ Klik op het `+` -symbool onderaan het `als` -blok. Hierdoor wordt een `anders` b
 
 --- task ---
 
-Click on the `+` symbol below the `else`{:class='microbitlogic'}. This will create an `else if`{:class='microbitlogic'}. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
+Klik op het `+` symbool onder de `anders`{:class='microbitlogic'} sectie. Hierdoor wordt een `anders als`{:class='microbitlogic'} sectie aangemaakt. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
 
 --- /task ---
 
@@ -491,7 +491,7 @@ Wanneer je jouw programma hebt gedownload naar jouw micro:bit, zal het onmiddell
 
 [[[microbit-share]]]
 
-### Completed project
+### Voltooid project
 
 If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355).
 
