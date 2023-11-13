@@ -91,19 +91,19 @@ In het midden staat het **blokken paneel**, dat ingedeeld is per kleur en je toe
 
 Aan de rechterkant is er het **code editor paneel**, waar je blokken naar toe sleept om je programma te maken.
 
-The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
+Het MakeCode editor paneel bevat al twee blokken: `bij opstarten`{:class='microbitbasic'} en `de hele tijd`{:class='microbitbasic'}.
 
 ### Toon pictogram
 
-You will use the `forever`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
+Je gaat het `de hele tijd` blok gebruiken om te zien hoe de LED's op de simulator werken.
 
 --- task ---
 
-Click on the `Basic`{:class='microbitbasic'} block menu in the blocks panel. Dit zal uitklappen om de beschikbare blokken te laten zien.
+Klik op het blokmenu `Basis`{:class='microbitbasic'} in het blokpaneel. Dit zal uitklappen om de beschikbare blokken te laten zien.
 
 <img src="images/basic-blocks.png" alt="Het basisblokmenu met het 'toon pictogram' blok geaccentueerd." width="300" />
 
-Drag the `show icon`{:class='microbitbasic'} block and drop it **inside** the `forever`{:class='microbitbasic'} block. Het moet als een puzzelstuk op zijn plaats passen.
+Sleep het `toon pictogram`{:class='microbitbasic'} blok en zet het neer **in** het `de hele tijd`{:class='microbitbasic'} blok. Het moet als een puzzelstuk op zijn plaats passen.
 
 ```microbit
 basic.forever(function () {
@@ -204,11 +204,11 @@ Je gebruikt hiervoor `als... dan` blokken.
 
 --- task ---
 
-Open the `Logic`{:class='microbitlogic'} menu and choose the `if`{:class='microbitlogic'} block.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, kies het `als`{:class="microbitlogic"} blok.
 
 <img src="images/if-block.png" alt="Het Logisch blokmenu geopend met het 'als' blok gemarkeerd." width="350" />
 
-Drag the `if`{:class='microbitlogic'} block inside the `forever`{:class='microbitbasic'} loop block. Place it **above** your `show icon`{:class='microbitbasic'} block.
+Sleep het `als`{:class="microbitlogic"} in het lus blok `de hele tijd`{:class="microbitbasic"}. Plaats het **boven** je `toon pictogram`{:class='microbitbasic'} blok.
 
 ```microbit
 basic.forever(function () {
@@ -223,7 +223,7 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag out the comparison block `0 = 0`{:class='microbitlogic'}.
+Vanuit het menu `Logisch`{:class='microbitlogic'} sleep je het vergelijkingsblok `0 = 0`{:class='microbitlogic'}.
 
 <img src="images/condition-block.png" alt="Het Logisch blokmenu met het vergelijkingsblok '0=0' gemarkeerd." width="350" />
 
@@ -242,7 +242,7 @@ basic.forever(function () {
 
 --- task ---
 
-Go back to the `Variables`{:class='microbitvariables'} menu and pick the small block that says `activity`{:class='microbitvariables'}.
+Ga terug naar het `Variabelen`{:class='microbitvariables'} menu en kies het kleine blok dat `activiteit`{:class='microbitvariables'} heet.
 
 Sleep dit blok naar de **eerste** `0` in je nieuwe vergelijkingsblok.
 
@@ -262,7 +262,7 @@ basic.forever(function () {
 
 --- task ---
 
-Drag your `show icon`{:class='microbitbasic'} block **inside** the `if`{:class='microbitlogic'} block.
+Sleep je `toon pictogram`{:class='microbitbasic'} blok **binnen** het `als`{:class='microbitlogic'} blok.
 
 ```microbit
 basic.forever(function () {
@@ -283,7 +283,7 @@ Als je een wijziging in een codeblok aanbrengt, wordt de simulator opnieuw opges
 
 Het is je misschien opgevallen dat er na je laatste wijziging niets op de LED's verscheen.
 
-Find your `set`{:class='microbitvariables'} block again. Hint: it's inside the `on start`{:class='microbitbasic'} block.
+Zoek opnieuw het `stel in op`{:class='microbitvariables'} blok. Tip: het bevindt zich in het `bij opstarten`{:class='microbitbasic'} blok.
 
 **Verander** de `0` naar `1`.
 
@@ -309,13 +309,13 @@ Klik op het `+` -symbool onderaan het `als` -blok. Hierdoor wordt een `anders` b
 
 --- task ---
 
-Klik op het `+` symbool onder de `anders`{:class='microbitlogic'} sectie. Hierdoor wordt een `anders als`{:class='microbitlogic'} sectie aangemaakt. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
+Klik op het `+` symbool onder de `anders`{:class='microbitlogic'} sectie. Hierdoor wordt een `anders als`{:class='microbitlogic'} sectie aangemaakt. Doe dit nog een keer zodat je twee `als dan`{:class='microbitlogic'} blokken hebt.
 
 --- /task ---
 
 --- task ---
 
-Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove it.
+Klik nu op het `-` symbool naast de `anders`{:class='microbitlogic'} om het te verwijderen.
 
 ![Met het + symbool worden een "anders" en twee " anders als" aan een voorwaarde toegevoegd. Vervolgens wordt de als verwijderd door op het - symbool ernaast te klikken.](images/adding-ifs.gif)
 
@@ -323,13 +323,13 @@ Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove
 
 --- task ---
 
-Right click on the whole `=`{:class='microbitlogic'} block in the first `if`{:class='microbitlogic'} block.
+Klik met de rechtermuisknop op het hele `=`{:class='microbitlogic'} blok in het eerste `als`{:class='microbitlogisch'} blok.
 
 Klik net links van de activiteitsvariabele, of net rechts van de waarde `0`, om er zeker van te zijn dat je het hele blok selecteert.
 
 Klik op **Dupliceren** om een kopie te maken.
 
-Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:class='microbitlogic'} block. Verander vervolgens het getal `1` in een `2`.
+Sleep het gedupliceerde `=`{:class='microbitlogic'} blok naar het eerste `als dan`{:class='microbitlogic'} blok. Verander vervolgens het getal `1` in een `2`.
 
 ![Als je met de rechtermuisknop op het vergelijkingsblok in het eerste blok klikt, verschijnt er een menu. Er wordt op de eerste optie, 'Dupliceren', geklikt. Een nieuwe versie van het vergelijkingsblok wordt gemaakt en naar de eerste anders als blok gesleept.](images/duplicate-comparison.gif)
 
@@ -337,7 +337,7 @@ Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:
 
 --- task ---
 
-Duplicate the `=`{:class='microbitlogic'} block one more time and drag it into the second `else if`{:class='microbitlogic'} block. Verander vervolgens het nummer naar `3`.
+Dupliceer het `=`{:class='microbitlogic'} blok nog één keer en sleep het naar de tweede `als dan`{:class='microbitlogic'} blok. Verander vervolgens het nummer naar `3`.
 
 ```microbit
 basic.forever(function () {
@@ -360,7 +360,7 @@ basic.forever(function () {
 
 **Kies** nog twee afbeeldingen om je hobby's weer te geven.
 
-You can use the `show icon`{:class='microbitbasic'} block or create your own icon using the `show leds`{:class='microbitbasic'} block.
+Je kunt het `toon pictogram`{:class='microbitbasic'} blok gebruiken of je eigen pictogram maken met behulp van het `toon lichtjes`{:class='microbitbasic'} blok.
 
 --- collapse ---
 
@@ -368,7 +368,7 @@ You can use the `show icon`{:class='microbitbasic'} block or create your own ico
 title: Gebruik het toon lichtjes blok
 ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside an `else if`{:class='microbitlogic'} block.
+Vanuit het `Basis`{:class='microbitbasic'} menu sleep je het `Toon lichtjes`{:class='microbitbasic'} blok in een `als dan`{:class='microbitlogic'} blok.
 
 <img src="images/show-leds.png" alt="Het basismenu met het 'toon lichtjes'-blok gemarkeerd." width="350" />
 
@@ -386,7 +386,7 @@ Je kunt op elk van de vierkanten klikken om te kiezen welke je wilt laten oplich
 
 --- task ---
 
-Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Sleep het `bij schudden`{:class='microbitinput'} uit het menu `Invoer`{:class='microbitinput'}.
 
 <img src="images/on-shake.png" alt="Het invoermenu met het 'bij schudden' blok gemarkeerd." width="350" />
 
@@ -394,13 +394,13 @@ Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='micro
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block inside the `on shake`{:class='microbitinput'} block.
+Vanuit het `Variabelen`{:class='microbitvariables'} menu, sleep je het `stel in op`{:class='microbitvariables'} blok in het `bij schudden`{:class='microbitinput'} blok.
 
 --- /task ---
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, drag the `pick random`{:class='microbitmath'} block to the `0` of the `set`{:class='microbitvariables'} block.
+Van het `Rekenen`{:class='microbitmath'} menu, sleep het `kies willekeurig`{:class='microbitmath'} blok naar het `0` blok van de `stel in op`{:class='microbitvariables'} blok.
 
 <img src="images/pick-random.png" alt="Het Rekenen menu met het blok 'kies willekeurig 0 tot 10' gemarkeerd." width="350" />
 
@@ -421,7 +421,7 @@ Gebruik het logo (V2) of een knop (V1) om de LED's uit te schakelen.
 
 --- task ---
 
-Drag the `on logo pressed`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Sleep het `bij logo ingedrukt`{:class='microbitinput'} blok uit het `Invoer`{:class='microbitinput'} menu.
 
 <img src="images/onlogo-pressed.png" alt="Het invoermenu met het 'bij logo ingedrukt' blok gemarkeerd." width="350" />
 
@@ -433,7 +433,7 @@ title: V1 micro:bit-gebruikers
 
 De logo-invoer is alleen beschikbaar op de V2 micro:bit.
 
-For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Voor de V1 micro:bit, gebruik het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok van het `Invoer`{:class='microbitinput'} menu.
 
 <img src="images/button-a.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok gemarkeerd." width="350" />
 
@@ -443,7 +443,7 @@ For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the
 
 --- task ---
 
-Drag the `clear screen`{:class='microbitbasic'} block from the `Basic`{:class='microbitbasic'} menu and place it inside the `on logo pressed`{:class='microbitinput'} block (or the `on button`{:class='microbitinput'} block for V1).
+Sleep het `wis scherm`{:class='microbitbasic'} blok uit het `Basis`{:class='microbitbasic'} menu en plaats het in het `bij logo ingedrukt`{:class='microbitbasic'} blok (of het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok voor V1).
 
 ```microbit
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -455,7 +455,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 --- task ---
 
-Now drag the `set`{:class='microbitvariables'} block from the `Variables`{:class='microbitvariables'} menu and place it below the `clear screen`{:class='microbitbasic'} block.
+Sleep nu het `stel in op`{:class='microbitvariables'} blok van het `Variabelen`{:class='microbitvariables'} menu en plaats het onder het `wis scherm`{:class='microbitbasic'} blok.
 
 ```microbit
 let activity = 0
@@ -493,7 +493,7 @@ Wanneer je jouw programma hebt gedownload naar jouw micro:bit, zal het onmiddell
 
 ### Voltooid project
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355).
+Als je je code wilt controleren, kun je [het voltooide project hier](https://makecode.microbit.org/S47133-08356-20146-01355) vinden.
 
 ### Verbeter je project
 
