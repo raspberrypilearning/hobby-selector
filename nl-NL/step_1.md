@@ -252,7 +252,6 @@ Verander de tweede `0` in `1`.
 basic.forever(function () {
     let activiteit = 0
     if (activiteit == 1) {
-
     }
     basic.showIcon(IconNames.Ghost)
 })
