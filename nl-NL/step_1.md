@@ -493,7 +493,7 @@ Wanneer je jouw programma hebt gedownload naar jouw micro:bit, zal het onmiddell
 
 ### Voltooid project
 
-Als je je code wilt controleren, kun je [het voltooide project hier](https://makecode.microbit.org/S47133-08356-20146-01355) vinden.
+If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
 
 ### Verbeter je project
 
