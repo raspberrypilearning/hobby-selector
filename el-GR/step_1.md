@@ -11,7 +11,7 @@
 Θα:
 + Κάνεις το micro:bit να ανάψει και να εμφανίσει εικόνες
 + Χρησιμοποιήσεις τυχαίους αριθμούς για να κάνεις επιλογές
-+ Use `if`{:class='microbitlogic'} blocks to control which images are displayed
++ Χρησιμοποίησε το μπλοκ `εάν`{:class='microbitlogic'} για να ελέγξεις ποιες εικόνες εμφανίζονται
 + Χρησιμοποιήσεις το λογότυπο ή ένα κουμπί για να καθαρίσεις την οθόνη
 
 --- no-print ---
@@ -91,19 +91,19 @@ title: Έκδοση εκτός σύνδεσης του επεξεργαστή
 
 Στη δεξιά πλευρά, υπάρχει ο **πίνακας του επεξεργαστή κώδικα**, όπου σύρεις και αφήνεις μπλοκ για να δημιουργήσεις το πρόγραμμά σου.
 
-The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
+Το πρόγραμμα επεξεργασίας MakeCode περιέχει ήδη δύο μπλοκ: `κατά την έναρξη`{:class='microbitbasic'} και `για πάντα`{:class='microbitbasic'}.
 
 ### Εμφάνιση εικονιδίου
 
-You will use the `forever`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
+Θα χρησιμοποιήσεις το μπλοκ `για πάντα` για να δεις πώς λειτουργούν τα LED στον προσομοιωτή.
 
 --- task ---
 
-Click on the `Basic`{:class='microbitbasic'} block menu in the blocks panel. Αυτό θα επεκταθεί για να σου δείξει τα διαθέσιμα μπλοκ.
+Κάνε κλικ στο μενού μπλοκ `Βασικά`{:class='microbitbasic'} στον πίνακα μπλοκ. Αυτό θα επεκταθεί για να σου δείξει τα διαθέσιμα μπλοκ.
 
 <img src="images/basic-blocks.png" alt="Το μενού Βασικά με το μπλοκ &quot;εμφάνιση εικονιδίου&quot; τονισμένο." width="300" />
 
-Drag the `show icon`{:class='microbitbasic'} block and drop it **inside** the `forever`{:class='microbitbasic'} block. Θα πρέπει να ταιριάζει στη θέση του σαν ένα κομμάτι παζλ.
+Σύρε το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} και απόθεσε το **μέσα ** στο μπλοκ `για πάντα`{:class='microbitbasic'}. Θα πρέπει να ταιριάζει στη θέση του σαν ένα κομμάτι παζλ.
 
 ```microbit
 basic.forever(function () {
@@ -168,7 +168,7 @@ basic.forever(function () {
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
+Άνοιξε το μενού `Μεταβλητές`{:class="block3variables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
 
 <img src="images/variable-menu.png" alt="Το μενού Μεταβλητές ανοίγει με τονισμένο το κουμπί &quot;Δημιουργία Μεταβλητής&quot;." width="350" />
 
@@ -182,13 +182,13 @@ Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variab
 
 --- /task ---
 
-Θα δεις τώρα ότι υπάρχουν διαθέσιμα νέα μπλοκ. These blocks let you set, change, or use the value stored in the `activity`{:class='microbitvariables'} variable.
+Θα δεις τώρα ότι υπάρχουν διαθέσιμα νέα μπλοκ. Αυτά τα μπλοκ σου επιτρέπουν να ορίσεις, να αλλάξεις ή να χρησιμοποιήσεις την τιμή που είναι αποθηκευμένη στη μεταβλητή `δραστηριότητα`.
 
 <img src="images/variable-blocks.png" alt="Το μενού Μεταβλητές- με νέα μπλοκ για να ορίσεις την τιμή, να αλλάξεις την τιμή και να χρησιμοποιήσεις την τιμή της μεταβλητής &quot;δραστηριότητα&quot; στον κώδικά σου." width="350" />
 
 --- task ---
 
-Drag the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
+Σύρε το μπλοκ `ορισμός`{:class='microbitvariables'} μέσα στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
 
 ```microbit
 let activity = 0
@@ -198,17 +198,17 @@ let activity = 0
 
 ### Ποιο χόμπι θα εμφανίσει;
 
-When `activity`{:class='microbitvariables'} is set to `1`, the icon for your first hobby should display. When `activity`{:class='microbitvariables'} is set to `2`, the icon for the next hobby should display.
+Όταν η `δραστηριότητα` έχει οριστεί σε `1`, θα πρέπει να εμφανίζεται το εικονίδιο για το πρώτο σου χόμπι. Όταν η `δραστηριότητα` έχει οριστεί σε `2`, θα πρέπει να εμφανίζεται το εικονίδιο για το επόμενό σου χόμπι.
 
 Θα χρησιμοποιήσεις μπλοκ `εάν... τότε` για να το κάνεις αυτό.
 
 --- task ---
 
-Open the `Logic`{:class='microbitlogic'} menu and choose the `if`{:class='microbitlogic'} block.
+Άνοιξε το μενού `Λογική`{:class='microbitlogic'} και επίλεξε το μπλοκ `εάν`{:class='microbitlogic'}.
 
 <img src="images/if-block.png" alt="Το μενού Λογική ανοίγει με το μπλοκ «εάν» τονισμένο." width="350" />
 
-Drag the `if`{:class='microbitlogic'} block inside the `forever`{:class='microbitbasic'} loop block. Place it **above** your `show icon`{:class='microbitbasic'} block.
+Σύρε το μπλοκ `εάν`{:class='microbitlogic'} μέσα στο μπλοκ βρόχου `για πάντα`{:class='microbitbasic'}. Τοποθέτησέ το **πάνω** από το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'}.
 
 ```microbit
 basic.forever(function () {
@@ -223,11 +223,11 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag out the comparison block `0 = 0`{:class='microbitlogic'}.
+Από το μενού `Λογική`{:class='microbitlogic'}, πάρε το μπλοκ σύγκρισης `0 = 0`{:class='microbitlogic'}.
 
 <img src="images/condition-block.png" alt="Το μενού Λογική με το μπλοκ σύγκρισης &quot;0 = 0&quot; τονισμένο." width="350" />
 
-Place it inside the `true` space within the `if`{:class='microbitlogic'} block.
+Τοποθέτησέ το μέσα στο διάστημα `αληθές` μέσα στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -242,7 +242,7 @@ basic.forever(function () {
 
 --- task ---
 
-Go back to the `Variables`{:class='microbitvariables'} menu and pick the small block that says `activity`{:class='microbitvariables'}.
+Πήγαινε πίσω στο μενού `Μεταβλητές`{:class='microbitvariables'} και επίλεξε το μικρό μπλοκ που λέει `δραστηριότητα`{:class='microbitvariables'}.
 
 Σύρε αυτό το μπλοκ στο **πρώτο** `0` στο νέο μπλοκ σύγκρισης.
 
@@ -262,7 +262,7 @@ basic.forever(function () {
 
 --- task ---
 
-Drag your `show icon`{:class='microbitbasic'} block **inside** the `if`{:class='microbitlogic'} block.
+Σύρε το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} **μέσα** στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -283,7 +283,7 @@ basic.forever(function () {
 
 Ίσως έχεις παρατηρήσει ότι δεν εμφανίστηκε τίποτα στα LED μετά την τελευταία σου αλλαγή.
 
-Find your `set`{:class='microbitvariables'} block again. Hint: it's inside the `on start`{:class='microbitbasic'} block.
+Βρες ξανά το μπλοκ `ορισμός`{:class='microbitvariables'}. Συμβουλή: βρίσκεται μέσα στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
 
 **Άλλαξε** το `0` σε `1`.
 
@@ -297,7 +297,7 @@ Find your `set`{:class='microbitvariables'} block again. Hint: it's inside the `
 
 ### Πρόσθεσε περισσότερα χόμπι
 
-To add more hobby options to your program, you will need to add more conditions to your `if`{:class='microbitlogic'} block.
+Για να προσθέσεις περισσότερες επιλογές χόμπι στο πρόγραμμά σου, θα χρειαστεί να προσθέσεις περισσότερες συνθήκες στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 --- task ---
 
@@ -309,13 +309,13 @@ To add more hobby options to your program, you will need to add more conditions 
 
 --- task ---
 
-Click on the `+` symbol below the `else`{:class='microbitlogic'}. This will create an `else if`{:class='microbitlogic'}. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
+Κάνε κλικ στο σύμβολο `+` κάτω από το `αλλιώς`{:class='microbitlogic'}. Αυτό θα δημιουργήσει ένα `αλλιώς εάν`{:class='microbitlogic'}. Κάντο άλλη μια φορά για να έχεις άλλα δύο μπλοκ `αλλιώς εάν `{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove it.
+Τώρα κάνε κλικ στο σύμβολο `-` δίπλα στο `αλλιώς`{:class='microbitlogic'} για να το αφαιρέσεις.
 
 ![Χρησιμοποιώντας το σύμβολο +, προστίθεται ένα αλλιώς και δύο ακόμη αλλιώς εάν σε μια συνθήκη. Στη συνέχεια, το αλλιώς αφαιρείται κάνοντας κλικ στο σύμβολο - δίπλα του.](images/adding-ifs.gif)
 
@@ -323,13 +323,13 @@ Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove
 
 --- task ---
 
-Right click on the whole `=`{:class='microbitlogic'} block in the first `if`{:class='microbitlogic'} block.
+Κάνε δεξί κλικ σε ολόκληρο το μπλοκ `=`{:class='microbitlogic'} στο πρώτο μπλοκ `εάν`{:class='microbitlogic'}.
 
 Κάνε κλικ μόνο στα αριστερά της μεταβλητής δραστηριότητα, ή ακριβώς στα δεξιά της τιμής `0`, για να βεβαιωθείς ότι έχεις επιλέξει ολόκληρο το μπλοκ.
 
 Κάνε κλικ στο **Αντίγραφο** για να δημιουργήσεις ένα αντίγραφο.
 
-Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:class='microbitlogic'} block. Άλλαξε τον αριθμό `1` σε `2`.
+Σύρε το διπλότυπο μπλοκ `=`{:class='microbitlogic'} μέσα στο πρώτο μπλοκ `εάν`{:class='microbitlogic'}. Άλλαξε τον αριθμό `1` σε `2`.
 
 ![Στο μπλοκ σύγκρισης στο πρώτο μπλοκ εάν, γίνεται δεξί κλικ και εμφανίζεται ένα μενού. Η πρώτη επιλογή «Αντίγραφο», γίνεται κλικ. Δημιουργείται μια νέα έκδοση του μπλοκ σύγκρισης και σύρεται στο πρώτο μπλοκ αλλιώς εάν.](images/duplicate-comparison.gif)
 
@@ -337,7 +337,7 @@ Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:
 
 --- task ---
 
-Duplicate the `=`{:class='microbitlogic'} block one more time and drag it into the second `else if`{:class='microbitlogic'} block. Άλλαξε τον αριθμό σε `3`.
+Αντίγραψε το μπλοκ `=`{:class='microbitlogic'} άλλη μια φορά και σύρε το στο δεύτερο μπλοκ `εάν`{:class='microbitlogic'}. Άλλαξε τον αριθμό σε `3`.
 
 ```microbit
 basic.forever(function () {
@@ -360,7 +360,7 @@ basic.forever(function () {
 
 **Επιίλεξε** δύο ακόμα εικόνες για να συμβολίζουν τα χόμπι σου.
 
-You can use the `show icon`{:class='microbitbasic'} block or create your own icon using the `show leds`{:class='microbitbasic'} block.
+Μπορείς να χρησιμοποιήσεις το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} ή να δημιουργήσεις το δικό σου εικονίδιο χρησιμοποιώντας το μπλοκ `show led`{:class='microbitbasic'}.
 
 --- collapse ---
 
@@ -368,7 +368,7 @@ You can use the `show icon`{:class='microbitbasic'} block or create your own ico
 title: Χρησιμοποιώντας το μπλοκ show leds
 ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside an `else if`{:class='microbitlogic'} block.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `show led`{:class='microbitbasic'} μέσα σε ένα μπλοκ `αλλιώς εάν`{:class='microbitlogic'}.
 
 <img src="images/show-leds.png" alt="Το μενού Βασικά με το μπλοκ &quot;show leds&quot; τονισμένο." width="350" />
 
@@ -386,7 +386,7 @@ From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='micr
 
 --- task ---
 
-Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Σύρε το μπλοκ `στο κούνημα`{:class='microbitinput'} από το μενού `Είσοδος`{:class='microbitinput'}.
 
 <img src="images/on-shake.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;στο κούνημα&quot;." width="350" />
 
@@ -394,13 +394,13 @@ Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='micro
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block inside the `on shake`{:class='microbitinput'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε το μπλοκ `ορισμός`{:class='microbitvariables'} μέσα στο μπλοκ `στο κούνημα`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, drag the `pick random`{:class='microbitmath'} block to the `0` of the `set`{:class='microbitvariables'} block.
+Από το μενού `Μαθηματικά`{:class='microbitmath'}, σύρε το μπλοκ `τυχαία επιλογή`{:class='microbitmath'} στο `0` του μπλοκ `ορισμός`{:class='microbitvariables'}.
 
 <img src="images/pick-random.png" alt="Το μενού Μαθηματικά με τονισμένο το μπλοκ «τυχαία επιλογή 0 έως 10»." width="350" />
 
@@ -421,7 +421,7 @@ input.onGesture(Gesture.Shake, function () {
 
 --- task ---
 
-Drag the `on logo pressed`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Σύρε το μπλοκ `on logo pressed`{:class='microbitinput'} από το μενού `Είσοδος`{:class='microbitinput'}.
 
 <img src="images/onlogo-pressed.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;on logo pressed'&quot;." width="350" />
 
@@ -433,7 +433,7 @@ title: Χρήστες του micro:bit V1
 
 Η είσοδος λογότυπου είναι διαθέσιμη μόνο στο micro:bit V2.
 
-For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Για το V1 micro:bit, χρησιμοποίησε το μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'} από το μενού `Είσοδος`{:class='microbitinput'}.
 
 <img src="images/button-a.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot;." width="350" />
 
@@ -443,7 +443,7 @@ For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the
 
 --- task ---
 
-Drag the `clear screen`{:class='microbitbasic'} block from the `Basic`{:class='microbitbasic'} menu and place it inside the `on logo pressed`{:class='microbitinput'} block (or the `on button`{:class='microbitinput'} block for V1).
+Σύρε το μπλοκ `καθαρισμός οθόνης`{:class='microbitbasic'} από το μενού `Βασικά`{:class='microbitbasic'} και τοποθέτησέ το μέσα στο μπλοκ `on logo pressed`{:class='microbitinput'} (ή το μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'} για το V1).
 
 ```microbit
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -455,7 +455,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 --- task ---
 
-Now drag the `set`{:class='microbitvariables'} block from the `Variables`{:class='microbitvariables'} menu and place it below the `clear screen`{:class='microbitbasic'} block.
+Τώρα σύρε το μπλοκ `ορισμός`{:class='microbitvariables'} από το μενού `Μεταβλητές`{:class='microbitvariables'} και τοποθέτησέ το κάτω από το μπλοκ `καθαρισμός οθόνης`{:class='microbitbasic'}.
 
 ```microbit
 let activity = 0
@@ -491,9 +491,9 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 [[[microbit-share]]]
 
-### Completed project
+### Ολοκληρωμένο έργο
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355).
+Αν θέλεις να ελέγξεις τον κώδικά σου, μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](https://makecode.microbit.org/S47133-08356-20146-01355).
 
 ### Αναβάθμισε το έργο σου
 
