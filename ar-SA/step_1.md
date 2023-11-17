@@ -493,7 +493,7 @@ When you have downloaded your program to your micro:bit, it will run immediately
 
 ### Completed project
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355).
+If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
 
 ### Upgrade your project
 
