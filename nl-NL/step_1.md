@@ -188,7 +188,7 @@ Je zult nu zien dat er nieuwe blokken beschikbaar zijn. Met deze blokken kun je 
 
 --- task ---
 
-Sleep het `stel in op`{:class='microbitvariables'} blok naar het bewerkingspaneel en plaats deze in het `bij opstart`{:class='microbitbasic'} blok.
+Sleep het `stel in op`{:class='microbitvariables'} blok naar het bewerkingspaneel en plaats deze in het `bij opstarten`{:class='microbitbasic'} blok.
 
 ```microbit
 let activity = 0
@@ -198,7 +198,7 @@ let activity = 0
 
 ### Welke hobby wordt weergegeven?
 
-Wanneer `activiteit`{:class='microbitvariables'} is ingesteld op `1`, moet het pictogram van je eerste hobby worden weergegeven. Wanneer `activiteit`{:class='microbitvariables'} is ingesteld op `2`, moet het pictogram van je eerste hobby worden weergegeven.
+Wanneer `activiteit`{:class='microbitvariables'} is ingesteld op `1`, moet het pictogram van je eerste hobby worden weergegeven. Wanneer `activiteit`{:class='microbitvariables'} is ingesteld op `2`, moet het pictogram van je volgende hobby worden weergegeven.
 
 Je gebruikt hiervoor `als... dan` blokken.
 
