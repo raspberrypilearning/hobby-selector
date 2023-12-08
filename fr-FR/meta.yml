@@ -1,0 +1,10 @@
+---
+title: Sélecteur de loisirs
+hero_image: images/banner.png
+description: Laisse ton micro:bit choisir un loisir pour toi
+version: 4
+listed: false
+copyedit: true
+last_tested: "2023-08-01"
+steps:
+  - title: Randomiser tes loisirs !
