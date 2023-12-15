@@ -6,7 +6,7 @@
 
 Έχει συμβεί να αναρωτιέσαι τι δραστηριότητα να κάνεις στη συνέχεια; Μπορείς να χρησιμοποιήσεις το micro:bit για να αποφασίσεις!
 
-Σε αυτό το έργο, θα δημιουργήσεις έναν τυχαίο επιλογέα χόμπι ****.
+Σε αυτό το έργο, θα δημιουργήσεις έναν **τυχαίο επιλογέα χόμπι**.
 
 Θα:
 + Κάνεις το micro:bit να ανάψει και να εμφανίσει εικόνες
@@ -20,7 +20,7 @@
 
 --- task ---
 
-Τι θα συμβεί αν **κουνήσεις** το micro:bit; Τι συμβαίνει εάν κάνεις κλικ στο λογότυπο ****;
+Τι θα συμβεί αν **κουνήσεις** το micro:bit; Τι συμβαίνει εάν κάνεις κλικ στο **λογότυπο**;
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S47133-08356-20146-01355" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -493,7 +493,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 ### Ολοκληρωμένο έργο
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
+Αν θέλεις να ελέγξεις τον κώδικά σου μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
 
 ### Αναβάθμισε το έργο σου
 
