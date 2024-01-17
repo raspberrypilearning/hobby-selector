@@ -1,26 +1,26 @@
-The **micro:bit** is a small computer that you can use to interact with the world around you.
+Mae'r **micro:bit** yn gyfrifiadur bach y gallwch ei ddefnyddio i ryngweithio â'r byd o'ch cwmpas.
 
-This project will help you **discover** what the **micro:bit** can do.
+Bydd y prosiect hwn yn eich helpu **ddarganfod** beth gall y **micro:bit** ei wneud.
 
-### What you will make
+### Beth fyddwch chi'n ei wneud
 
-Do you ever find yourself wondering what activity to do next? You can use the micro:bit to help you decide!
+Ydych chi byth yn canfod eich hun yn meddwl pa weithgaredd i'w wneud nesaf? Gallwch ddefnyddio'r micro:bit i'ch helpu i benderfynu!
 
-In this project, you will to make a **random hobby selector**.
+Yn y prosiect hwn, byddwch yn gwneud **dewisydd hobi ar hap**.
 
-You will:
-+ Make the micro:bit light up and display images
-+ Use random numbers to make choices
-+ Use `if`{:class='microbitlogic'} blocks to control which images are displayed
-+ Use the logo or a button to clear the display
+Byddwch yn:
++ Gwnewch i'r micro:bit oleuo ac arddangos delweddau
++ Defnyddiwch haprifau i wneud dewisiadau
++ Defnyddiwch flociau `os yw`{:class='microbitlogic'} i reoli pa ddelweddau sy'n cael eu harddangos
++ Defnyddiwch y logo neu fotwm i glirio'r arddangosfa
 
 --- no-print ---
 
-### Play ▶️
+### Chwarae ▶️
 
 --- task ---
 
-What happens if you **shake** the micro:bit? What happens if you click the **logo**?
+Beth sy'n digwydd os **ysgwyd** y micro:bit? Beth sy'n digwydd os cliciwch y logo ****?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S47133-08356-20146-01355" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -30,80 +30,80 @@ What happens if you **shake** the micro:bit? What happens if you click the **log
 
 --- /no-print ---
 
-### Open MakeCode
+### Agor MakeCode
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+I ddechrau creu eich prosiect micro:bit, mae angen ichi agor golygydd MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org)
+Agorwch y golygydd MakeCode yn [makecode.microbit.org](https://makecode.microbit.org)
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Fersiwn all-lein o'r golygydd
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app).
+Mae yna hefyd [fersiwn y gellir ei lawrlwytho o olygydd MakeCode](https://makecode.microbit.org/offline-app).
 
 --- /collapse ---
 
 --- /task ---
 
-Once the editor is open, you will need to create a new project and give your project a name.
+Unwaith y bydd y golygydd ar agor, bydd angen i chi greu prosiect newydd a rhoi enw i'ch prosiect.
 
 --- task ---
 
-Click on the **New Project** button.
+Cliciwch ar y botwm **Prosiect Newydd**.
 
-<img src="images/new-project-button.png" alt="The New Project button in MakeCode." width="250" />
+<img src="images/new-project-button.png" alt="Y botwm Prosiect Newydd yn MakeCode." width="250" />
 
 --- /task ---
 
 --- task ---
 
-Give your new project the name `Hobby selector` and click **Create**.
+Rhowch yr enw `Hobby selector` i'ch prosiect newydd a chliciwch **Creu**.
 
-<img src="images/new-project.png" alt="The name 'Hobby selector' written in the Create a Project dialogue box." width="300" />
+<img src="images/new-project.png" alt="Mae'r enw 'Hobby selector' wedi'i ysgrifennu yn y blwch deialog Creu Prosiect." width="300" />
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**Awgrym:** Er mwyn ei gwneud hi'n haws dod o hyd i'ch prosiect yn nes ymlaen, rhowch enw defnyddiol iddo sy'n ymwneud â'r gweithgaredd rydych chi'n ei greu.
 
 --- /task ---
 
-### The MakeCode editor
+### Golygydd MakeCode
 
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need to start coding on micro:bit.
+Wedi'i greu gan y micro:bit Foundation, mae gan **olygydd MakeCode** bopeth sydd ei angen arnoch i ddechrau codio ar micro:bit.
 
-![The MakeCode editor window](images/makecode-tour.png)
+![Ffenestr golygydd MakeCode](images/makecode-tour.png)
 
-On the left-hand side, there is a **simulator**. This contains a virtual micro:bit that you can use to test your code!
+Ar yr ochr chwith, mae **efelychydd**. Mae hwn yn cynnwys micro:bit rhithiol y gallwch ei ddefnyddio i brofi'ch cod!
 
-It has all the features and buttons found on a V2 micro:bit, including:
-+ LED display
-+ Speaker
-+ Microphone
-+ Input buttons
+Mae ganddo'r holl nodweddion a botymau a geir ar ficro:bit V2, gan gynnwys:
++ Arddangosfa LED
++ Llefarydd
++ Meicroffon
++ Botymau mewnbwn
     + A
     + B
     + Logo
 
-In the centre, there is the **blocks panel**, which is colour-coded and allows you to access the various code blocks.
+Yn y canol, mae **panel bloc**, sydd â chod lliw ac sy'n eich galluogi i gael mynediad at y blociau cod amrywiol.
 
-On the right-hand side, there is the **code editor panel**, where you drag and drop blocks to create your program.
+Ar yr ochr dde, mae **panel golygydd cod**, lle rydych chi'n llusgo a gollwng blociau i greu eich rhaglen.
 
-The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
+Mae panel golygydd MakeCode eisoes yn cynnwys dau floc: `ar gychwyn`{:class='microbitbasic'} ac `am byth`{:class='microbitbasic'}.
 
-### Show icon
+### Dangos eicon
 
-You will use the `forever`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
+Byddwch yn defnyddio'r bloc `am byth`{:class='microbitbasic'} i weld sut mae'r LEDs ar yr efelychydd yn gweithio.
 
 --- task ---
 
-Click on the `Basic`{:class='microbitbasic'} block menu in the blocks panel. This will expand to show you the blocks available.
+Cliciwch ar y ddewislen bloc `Sylfaenol`{:class='microbitbasic'} yn y panel blociau. Bydd hyn yn ehangu i ddangos y blociau sydd ar gael i chi.
 
-<img src="images/basic-blocks.png" alt="The Basic block menu with the 'show icon' block highlighted." width="300" />
+<img src="images/basic-blocks.png" alt="Mae'r ddewislen bloc Sylfaenol gyda'r bloc 'eicon dangos' wedi'i amlygu." width="300" />
 
-Drag the `show icon`{:class='microbitbasic'} block and drop it **inside** the `forever`{:class='microbitbasic'} block. It should fit in place like a puzzle piece.
+Llusgwch yr bloc `dangos eicon`{:class='microbitbasic'} a'i ollwng **y tu mewn i**'r bloc `am byth`{:class='microbitbasic'}. Dylai hwn ffitio yn ei le fel darn pos.
 
 ```microbit
 basic.forever(function () {
@@ -115,9 +115,9 @@ basic.forever(function () {
 
 --- task ---
 
-Click the down arrow on the show icon block and pick an icon.
+Cliciwch ar y saeth i lawr ar y bloc dangos eicon a dewis eicon.
 
-<img src="images/show-icons.png" alt="The show icon menu expanded to display all the available icons." width="300" />
+<img src="images/show-icons.png" alt="Ehangodd y ddewislen dangos eicon i ddangos yr holl eiconau sydd ar gael." width="300" />
 
 ![]()
 
@@ -125,70 +125,70 @@ Click the down arrow on the show icon block and pick an icon.
 
 --- task ---
 
-**Test:** Click the play button on the simulator. The LED display should light up, showing your chosen icon.
+**Prawf:** Cliciwch y botwm chwarae ar yr efelychydd. Dylai'r arddangosfa LED oleuo, gan ddangos yr eicon a ddewiswyd gennych.
 
-In this example, we have chosen the `X` icon.
+Yn yr enghraifft hon, rydyn ni wedi dewis yr eicon `X`.
 
-![The microbit simulator displaying an 'X' icon on its LEDs with the code blocks showing on the right.](images/led-display.png)
+![Yr efelychydd microbit sy'n arddangos eicon 'X' ar ei LEDs gyda'r blociau côd yn dangos ar y dde.](images/led-display.png)
 
-Well done! You've made the micro:bit to do something!
-
---- /task ---
-
-### Choose your hobbies
-
---- task ---
-
-Choose three hobbies or activities you like to do in your spare time.
-
-Here are some ideas to get you started:
-+ 🎮 Gaming
-+ 📚 Reading
-+ 🧁 Baking
-+ 📺 Watching TV
-+ 🚶‍♀️ Going for a walk
-+ 🏐 Playing a sport
-+ 🎨 Drawing
+Da iawn! Rydych chi wedi gwneud y micro:bit i wneud rhywbeth!
 
 --- /task ---
 
---- task ---
-
-Change your icon to one that represents your first hobby.
-
-We chose a Pac-Man ghost to represent gaming! 👻
-
---- /task ---
-
-### Create a variable
-
-You will use three different icons to represent three different hobbies.
-
-Each hobby will be linked to a number and you will create a variable so you can change which hobby is displayed.
+### Dewiswch eich hobïau
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
+Dewiswch dri hobi neu weithgaredd yr ydych yn hoffi eu gwneud yn eich amser hamdden.
 
-<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted." width="350" />
+Dyma rai syniadau i'ch rhoi ar ben ffordd:
++ 🎮 Hapchwarae
++ 📚 Darllen
++ 🧁 Pobi
++ 📺 Gwylio teledu
++ 🚶‍♀️ Mynd am dro
++ 🏐 Chwaraeon
++ 🎨 Arlunio
 
 --- /task ---
 
 --- task ---
 
-Name the new variable `activity`, then click the **OK** button.
+Newidiwch eich eicon i un sy'n cynrychioli eich hobi cyntaf.
 
-<img src="images/variable-name.png" alt="The 'New variable name' window, with the name 'activity' written in the box." width="350" />
+Dewison ni ysbryd Pac-Man i gynrychioli hapchwarae! 👻
 
 --- /task ---
 
-You will now see that there are new blocks available. These blocks let you set, change, or use the value stored in the `activity`{:class='microbitvariables'} variable.
+### Creu newidyn
 
-<img src="images/variable-blocks.png" alt="The Variables block menu - with new blocks to set the value, to change the value, and to use the value of the 'activity' variable in your code." width="350" />
+Byddwch yn defnyddio tri eicon gwahanol i gynrychioli tri hobi gwahanol.
+
+Bydd pob hobi yn gysylltiedig â rhif a byddwch yn creu newidyn er mwyn i chi allu newid pa hobi sy'n cael ei arddangos.
 
 --- task ---
 
-Drag the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
+Agorwch y ddewislen `Newidynnau`{:class='microbitvariables'}, a chliciwch **Gwneud newidyn**.
+
+<img src="images/variable-menu.png" alt="Y ddewislen bloc Newidynnau. Agorwch gyda'r botwm 'Gwneud newidyn' wedi'i amlygu." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Enwch y newidyn newydd `amserydd`, yna cliciwch ar y botwm **OK**.
+
+<img src="images/variable-name.png" alt="Y ffenestr 'Enw newidyn newydd', gyda'r enw 'gweithgaredd' wedi'i ysgrifennu yn y blwch." width="350" />
+
+--- /task ---
+
+Fe welwch nawr fod blociau newydd ar gael. Mae'r blociau hyn yn gadael i chi osod, newid, neu ddefnyddio'r gwerth sydd wedi'i storio yn y newidyn `gweithgaredd`{:class='microbitvariables'}.
+
+<img src="images/variable-blocks.png" alt="Y ddewislen bloc Newidynnau - gyda blociau newydd i osod y gwerth, i newid y gwerth, ac i ddefnyddio gwerth y newidyn 'gweithgaredd' yn eich côd." width="350" />
+
+--- task ---
+
+Llusgwch y bloc `gosod`{:class='microbitvariables'} y tu mewn i'r bloc `ar gychwyn`{:class='microbitbasic'}.
 
 ```microbit
 let activity = 0
@@ -196,19 +196,19 @@ let activity = 0
 
 --- /task ---
 
-### Which hobby will display?
+### Pa hobi fydd yn arddangos?
 
-When `activity`{:class='microbitvariables'} is set to `1`, the icon for your first hobby should display. When `activity`{:class='microbitvariables'} is set to `2`, the icon for the next hobby should display.
+Pan fydd `gweithgaredd`{ :class = 'microbitvariables'} wedi'i osod i `1`, dylai'r eicon ar gyfer eich hobi cyntaf ddangos. Pan fydd `gweithgaredd`{ :class = 'microbitvariables'} wedi'i osod i `2`, dylai'r eicon ar gyfer yr hobi nesaf ddangos.
 
-You will use `if... then` blocks to do this.
+Byddwch yn defnyddio blociau `os... yna` i wneud hyn.
 
 --- task ---
 
-Open the `Logic`{:class='microbitlogic'} menu and choose the `if`{:class='microbitlogic'} block.
+Agorwch y ddewislen `Rhesymeg`{:class='microbitlogic'} a dewiswch y bloc `os`{:class='microbitlogic'}.
 
-<img src="images/if-block.png" alt="The Logic block menu open with the 'if' block highlighted." width="350" />
+<img src="images/if-block.png" alt="Mae'r ddewislen bloc Rhesymeg ar agor gyda'r bloc 'os' wedi'i amlygu." width="350" />
 
-Drag the `if`{:class='microbitlogic'} block inside the `forever`{:class='microbitbasic'} loop block. Place it **above** your `show icon`{:class='microbitbasic'} block.
+Llusgwch y bloc `os`{:class='microbitlogic'} y tu mewn i'r bloc dolen `am byth`{:class='microbitbasic'}. Rhowch ef **uwchben** eich bloc `dangos eicon`{:class='microbitbasic'}.
 
 ```microbit
 basic.forever(function () {
@@ -223,11 +223,11 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag out the comparison block `0 = 0`{:class='microbitlogic'}.
+O'r ddewislen `Rhesymeg`{:class='microbitlogic'}, llusgwch allan y bloc cymharu `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/condition-block.png" alt="The Logic block menu with the comparison block '0 = 0' highlighted." width="350" />
+<img src="images/condition-block.png" alt="Y ddewislen bloc Rhesymeg gyda'r bloc cymharu '0 = 0' wedi'i amlygu." width="350" />
 
-Place it inside the `true` space within the `if`{:class='microbitlogic'} block.
+Rhowch ef y tu mewn i'r bwlch `gwir` o fewn y bloc `os`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -242,11 +242,11 @@ basic.forever(function () {
 
 --- task ---
 
-Go back to the `Variables`{:class='microbitvariables'} menu and pick the small block that says `activity`{:class='microbitvariables'}.
+Ewch yn ôl i'r ddewislen `Newidynnau`{:class='microbitvariables'} a dewiswch y bloc bach sy'n dweud `gweithgaredd`{:class='microbitvariables'}.
 
-Drag this block to the **first** `0` in your new comparison block.
+Llusgwch y bloc hwn i'r `0` **cyntaf** yn eich bloc cymharu newydd.
 
-Change the second `0` to `1`.
+Newidiwch yr ail `0` i `1`.
 
 ```microbit
 basic.forever(function () {
@@ -262,7 +262,7 @@ basic.forever(function () {
 
 --- task ---
 
-Drag your `show icon`{:class='microbitbasic'} block **inside** the `if`{:class='microbitlogic'} block.
+Llusgwch eich bloc `dangos eicon`{:class='microbitbasic'} **y tu mewn i**'r bloc `os`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -277,67 +277,67 @@ basic.forever(function () {
 
 --- task ---
 
-**Test** your program:
+**Profwch** eich rhaglen:
 
-When you make a change to a code block, the simulator will restart.
+Pan fyddwch chi'n gwneud newidiad i floc côd, bydd yr efelychydd yn ailgychwyn.
 
-You may have noticed that nothing appeared on the LEDs after your last change.
+Efallai eich bod wedi sylwi na ymddangosodd unrhyw beth ar y LEDs ar ôl eich newidiad diwethaf.
 
-Find your `set`{:class='microbitvariables'} block again. Hint: it's inside the `on start`{:class='microbitbasic'} block.
+Dewch o hyd i'ch bloc `gosod`{:class='microbitvariables'} eto. Awgrym: mae y tu mewn i'r bloc `ar gychwyn`{:class='microbitbasic'}.
 
-**Change** the `0` to `1`.
+**Newid** y `0` i `1`.
 
-**Re-test**:
+**Ail-brawf**:
 
-When the simulator restarts after your last change, the icon should appear.
+Pan fydd yr efelychydd yn ailgychwyn ar ôl eich newid diwethaf, dylai'r eicon ymddangos.
 
-Make sure you **set the value of the activity variable back to `0`** ready for the next step.
-
---- /task ---
-
-### Add more hobbies
-
-To add more hobby options to your program, you will need to add more conditions to your `if`{:class='microbitlogic'} block.
-
---- task ---
-
-Click on the `+` symbol at the bottom of the `if` block. This will create an `else` block.
-
-<img src="images/if-plus-icon.png" alt="The + symbol in the bottom-left corner of the 'if block' inside the 'forever' loop." width="250" />
+Gwnewch yn siŵr eich bod **yn gosod gwerth y newidyn gweithgaredd yn ôl i `0`** yn barod ar gyfer y cam nesaf.
 
 --- /task ---
 
+### Ychwanegu mwy o hobïau
+
+I ychwanegu mwy o opsiynau hobi at eich rhaglen, bydd angen i chi ychwanegu mwy o amodau at eich bloc `os`{:class='microbitlogic'}.
+
 --- task ---
 
-Click on the `+` symbol below the `else`{:class='microbitlogic'}. This will create an `else if`{:class='microbitlogic'}. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
+Cliciwch ar y symbol `+` ar waelod y bloc `os`. Bydd hyn yn creu bloc `arall`.
+
+<img src="images/if-plus-icon.png" alt="Y symbol + yng nghornel chwith isaf y bloc 'os' y tu mewn i'r ddolen 'am byth'." width="250" />
 
 --- /task ---
 
 --- task ---
 
-Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove it.
-
-![Using the + symbol, an else and two else ifs are added to a condition. Next, the else is removed by clicking the - symbol next to it.](images/adding-ifs.gif)
+Cliciwch ar y symbol `+` o dan yr `arall`{:class='microbitlogic'}. Bydd hyn yn creu `arall os`{:class='microbitlogic'}. Gwnewch hyn unwaith eto fel bod gennych ddau floc `arall os`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Right click on the whole `=`{:class='microbitlogic'} block in the first `if`{:class='microbitlogic'} block.
+Nawr cliciwch ar y symbol `-` wrth ymyl yr `arall`{:class='microbitlogic'} i'w dynnu.
 
-Click just to the left of the activity variable, or just to the right of the value `0`, to make sure you select the whole block.
-
-Click **Duplicate** to make a copy.
-
-Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:class='microbitlogic'} block. Then change the number `1` to a `2`.
-
-![The comparison block in the first if block is right clicked, and a menu appears. The first option, 'Duplicate', is clicked. A new version of the comparison block is created, and dragged into the first else if block.](images/duplicate-comparison.gif)
+![Gan ddefnyddio'r symbol +, mae un 'arall' a dau 'arall os' yn cael eu hychwanegu at amod. Nesaf, caiff y llall ei dynnu trwy glicio ar y - symbol wrth ei ymyl.](images/adding-ifs.gif)
 
 --- /task ---
 
 --- task ---
 
-Duplicate the `=`{:class='microbitlogic'} block one more time and drag it into the second `else if`{:class='microbitlogic'} block. Then change the number to `3`.
+Dde-gliciwch ar y bloc cyfan `=`{:class='microbitlogic'} yn y bloc `os`{:class='microbitlogic'} cyntaf.
+
+Cliciwch ychydig i'r chwith o'r newidyn gweithgaredd, neu dim ond i'r dde o'r gwerth `0`, i wneud yn siŵr eich bod yn dewis y bloc cyfan.
+
+Cliciwch **Dyblyg** i wneud copi.
+
+Llusgwch y bloc dyblyg `=`{:class='microbitlogic'} i'r bloc `arall os`{:class='microbitlogic'} cyntaf. Yna newidiwch y rhif `1` i `2`.
+
+![Mae'r bloc cymhariaeth yn y bloc cyntaf os yw clicio ar y dde, ac mae dewislen yn ymddangos. Mae'r opsiwn cyntaf, 'Duplicate', yn cael ei glicio. Mae fersiwn newydd o'r bloc cymharu yn cael ei greu, a'i lusgo i'r bloc arall cyntaf.](images/duplicate-comparison.gif)
+
+--- /task ---
+
+--- task ---
+
+Dyblygwch y bloc `=`{:class='microbitlogic'} unwaith eto a llusgwch ef i'r ail floc `arall os`{:class='microbitlogic'}. Yna newidiwch y rhif i `3`.
 
 ```microbit
 basic.forever(function () {
@@ -354,57 +354,57 @@ basic.forever(function () {
 
 --- /task ---
 
-### Style your hobbies
+### Steiliwch eich hobïau
 
 --- task ---
 
-**Choose** two more images to represent your hobbies.
+**Dewiswch** ddwy ddelwedd arall i gynrychioli eich hobïau.
 
-You can use the `show icon`{:class='microbitbasic'} block or create your own icon using the `show leds`{:class='microbitbasic'} block.
+Gallwch ddefnyddio'r bloc `dangos eicon`{:class='microbitbasic'} neu greu eich eicon eich hun gan ddefnyddio'r bloc `dangos LEDs`{:class='microbitbasic'}.
 
 --- collapse ---
 
 ---
-title: Using the show leds block
+teitl: Defnyddio'r bloc dangos leds
 ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside an `else if`{:class='microbitlogic'} block.
+O'r ddewislen `Sylfaenol`{:class='microbitbasic'}, llusgwch y bloc `dangos LEDs`{:class='microbitbasic'} y tu mewn i floc `arall os`{:class='microbitlogic'}.
 
-<img src="images/show-leds.png" alt="The Basic menu with the 'show leds' block highlighted." width="350" />
+<img src="images/show-leds.png" alt="Amlygwyd y ddewislen Sylfaenol gyda'r bloc 'dangos led'." width="350" />
 
-You can click each of the squares to pick which ones you want to light up. White squares will be lit on the micro:bit.
+Gallwch glicio ar bob un o'r sgwariau i ddewis pa rai rydych chi am eu goleuo. Bydd sgwariau gwyn yn cael eu goleuo ar y micro:bit.
 
-<img src="images/draw-icon.png" alt="The 'show leds' block with a smiley face created in white squares." width="350" />
+<img src="images/draw-icon.png" alt="Y bloc 'dangos leds' gyda wyneb gwenu wedi'i greu mewn sgwariau gwyn." width="350" />
 
 --- /collapse ---
 
 --- /task ---
 
-### Choose a random hobby
+### Dewiswch hobi ar hap
 
-**Set** the micro:bit to choose a random hobby when you shake it.
+**Gosodwch** y micro:bit i ddewis hobi ar hap pan fyddwch chi'n ei ysgwyd.
 
 --- task ---
 
-Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Llusgwch y bloc `ar ysgwyd`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:class='microbitinput'}.
 
-<img src="images/on-shake.png" alt="The Input menu with the 'on shake' block highlighted." width="350" />
+<img src="images/on-shake.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar ysgwyd' wedi'i amlygu." width="350" />
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block inside the `on shake`{:class='microbitinput'} block.
+O'r ddewislen `Newidynnau`{:class='microbitvariables'}, llusgwch y bloc `gosod`{:class='microbitvariables'} y tu mewn i'r bloc `ar ysgwyd`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, drag the `pick random`{:class='microbitmath'} block to the `0` of the `set`{:class='microbitvariables'} block.
+O'r ddewislen `Mathemateg`{:class='microbitmath'}, llusgwch y bloc `dewis hap`{:class='microbitmath'} i'r `0` o'r bloc `gosod`{:class='microbitmath'}.
 
-<img src="images/pick-random.png" alt="The Math menu with the 'pick random 0 to 10' block highlighted." width="350" />
+<img src="images/pick-random.png" alt="Mae'r ddewislen Mathemateg gyda'r bloc 'dewis ar hap 0 i 10' wedi'i amlygu." width="350" />
 
-Change the numbers `0 to 10` to `1 to 3`.
+Newidiwch y rhifau `0 i 10` i `1 i 3`.
 
 ```microbit
 let activity = 0
@@ -415,27 +415,27 @@ input.onGesture(Gesture.Shake, function () {
 
 --- /task ---
 
-### Clear the display
+### Clirio'r arddangosfa
 
-Use the touch-sensitive logo (V2) or a button (V1) to turn off the LEDs.
+Defnyddiwch y logo cyffwrdd-sensitif (V2) neu fotwm (V1) i ddiffodd y LEDs.
 
 --- task ---
 
-Drag the `on logo pressed`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Llusgwch y `ar wasgu'r logo`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:class='microbitinput'}.
 
-<img src="images/onlogo-pressed.png" alt="The Input menu with the 'on logo pressed' block highlighted." width="350" />
+<img src="images/onlogo-pressed.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar wasgu'r logo' wedi'i amlygu." width="350" />
 
 --- collapse ---
 
 ---
-title: V1 micro:bit users
+teitl: V1 defnyddwyr micro:bit
 ---
 
-The logo input is only available on the V2 micro:bit.
+Mae mewnbwn y logo ar gael ar y micro:bit V2 yn unig.
 
-For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Ar gyfer y micro:bit V1, defnyddiwch y bloc `ar fotwm`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:class='microbitinput'}.
 
-<img src="images/button-a.png" alt="The Input menu with the 'on button A pressed' block highlighted." width="350" />
+<img src="images/button-a.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar wasgu'r fotwm A' wedi'i amlygu." width="350" />
 
 --- /collapse ---
 
@@ -443,7 +443,7 @@ For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the
 
 --- task ---
 
-Drag the `clear screen`{:class='microbitbasic'} block from the `Basic`{:class='microbitbasic'} menu and place it inside the `on logo pressed`{:class='microbitinput'} block (or the `on button`{:class='microbitinput'} block for V1).
+Llusgwch y bloc `clirio sgrîn`{:class='microbitbasic'} o'r ddewislen `Sylfaenol`{:class='microbitbasic'} a'i osod y tu mewn i'r bloc`ar gwasgu'r logo`{:class='microbitinput'} (neu y bloc `ar fotwm`{:class='microbitinput'} ar gyfer V1).
 
 ```microbit
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -455,7 +455,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 --- task ---
 
-Now drag the `set`{:class='microbitvariables'} block from the `Variables`{:class='microbitvariables'} menu and place it below the `clear screen`{:class='microbitbasic'} block.
+Nawr llusgwch y bloc `gosod`{:class='microbitvariables'} o'r ddewislen `Newidynnau`{:class='microbitvariables'} a'i osod o dan y bloc `clirio sgrîn`{:class='microbitbasic'}.
 
 ```microbit
 let activity = 0
@@ -469,39 +469,39 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 --- task ---
 
-**Test** your program:
+**Profwch** eich rhaglen:
 
-**Click** the shake button on the simulator to randomly choose a hobby.
+**Cliciwch** ar y botwm ysgwyd ar yr efelychydd i ddewis hobi ar hap.
 
-**Use** the logo (or Button A on the V1 micro:bit) to make sure the screen clears.
+**Defnyddiwch** y logo (neu Fotwm A ar y micro:bit V1) i sicrhau bod y sgrin yn clirio.
 
 --- /task ---
 
 --- task ---
 
-Download your code and test it on a physical micro:bit!
+Dadlwythwch eich côd a phrofwch ef ar micro:bit corfforol!
 
 [[[download-to-microbit]]]
 
-When you have downloaded your program to your micro:bit, it will run immediately.
+Pan fyddwch wedi lawrlwytho'ch rhaglen i'ch micro:bit, bydd yn rhedeg ar unwaith.
 
-**Test**: You should see a random icon each time you shake the micro:bit.
+**Prawf**: Ddylech weld eicon ar hap bob tro y byddwch yn ysgwyd y micro:bit.
 
 --- /task ---
 
 [[[microbit-share]]]
 
-### Completed project
+### Prosiect wedi'i gwblhau
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
+Os ydych am wirio'ch côd gallwch ddod o hyd i't [prosiect gorffenedig yma](https://makecode.microbit.org/S47133-08356-20146-01355){:target = "_blank"}.
 
-### Upgrade your project
+### Uwchraddio eich prosiect
 
-You can upgrade your project to make it more engaging:
+Gallwch chi uwchraddio'ch prosiect i'w wneud yn fwy deniadol:
 
-+ Add more hobbies so you have a wider range to choose from.
++ Ychwanegwch fwy o hobïau fel bod gennych chi ystod ehangach i ddewis ohonynt.
 
-Remember to:
-  + Add a different symbol to display for each activity
-  + Increase the number of `else if` blocks so you can add more icons
-  + Increase the random range to more than three to match the number of added hobbies
+Cofiwch:
+  + Ychwanegu symbol gwahanol i'w ddangos ar gyfer pob gweithgaredd
+  + Cynyddu'y nifer o flociau `arall os` er mwyn i chi allu ychwanegu mwy o eiconau
+  + Cynyddwch yr ystod ar hap i fwy na thri i gyd-fynd â nifer y hobïau ychwanegol
