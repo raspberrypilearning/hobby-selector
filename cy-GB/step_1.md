@@ -365,7 +365,7 @@ Gallwch ddefnyddio'r bloc `dangos eicon`{:class='microbitbasic'} neu greu eich e
 --- collapse ---
 
 ---
-teitl: Defnyddio'r bloc dangos leds
+title: Defnyddio'r bloc dangos leds
 ---
 
 O'r ddewislen `Sylfaenol`{:class='microbitbasic'}, llusgwch y bloc `dangos LEDs`{:class='microbitbasic'} y tu mewn i floc `arall os`{:class='microbitlogic'}.
@@ -428,7 +428,7 @@ Llusgwch y `ar wasgu'r logo`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:cl
 --- collapse ---
 
 ---
-teitl: V1 defnyddwyr micro:bit
+title: V1 defnyddwyr micro:bit
 ---
 
 Mae mewnbwn y logo ar gael ar y micro:bit V2 yn unig.
