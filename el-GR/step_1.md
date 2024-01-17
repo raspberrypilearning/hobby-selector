@@ -493,7 +493,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 ### Ολοκληρωμένο έργο
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
+Αν θέλεις να ελέγξεις τον κώδικά σου μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
 
 ### Αναβάθμισε το έργο σου
 
