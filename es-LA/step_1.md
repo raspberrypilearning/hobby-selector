@@ -1,26 +1,26 @@
-The **micro:bit** is a small computer that you can use to interact with the world around you.
+El **micro:bit** es una pequeña computadora que puedes usar para interactuar con el mundo que te rodea.
 
-This project will help you **discover** what the **micro:bit** can do.
+Este proyecto te ayudará a **descubrir** lo que puede hacer **micro:bit**.
 
-### What you will make
+### Lo que harás
 
-Do you ever find yourself wondering what activity to do next? You can use the micro:bit to help you decide!
+¿Alguna vez te preguntas qué puedes hacer? ¡Puedes utilizar el micro:bit para ayudarte a decidir!
 
-In this project, you will to make a **random hobby selector**.
+En este proyecto, crearás un **selector de pasatiempos aleatorio**.
 
-You will:
-+ Make the micro:bit light up and display images
-+ Use random numbers to make choices
-+ Use `if`{:class='microbitlogic'} blocks to control which images are displayed
-+ Use the logo or a button to clear the display
+Vas a:
++ Hacer encender la luz micro:bit y mostrar imágenes
++ Usar números aleatorios para hacer elecciones
++ Usar bloques `si`{:class='microbitlogic'} para controlar lo que se muestra
++ Usar el logo o un botón para borrar la pantalla
 
 --- no-print ---
 
-### Play ▶️
+### Reproducir ▶️
 
 --- task ---
 
-What happens if you **shake** the micro:bit? What happens if you click the **logo**?
+¿Qué pasa si **sacudes** el micro:bit? ¿Qué sucede si haces clic en el logo ****?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S47133-08356-20146-01355" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -30,70 +30,70 @@ What happens if you **shake** the micro:bit? What happens if you click the **log
 
 --- /no-print ---
 
-### Open MakeCode
+### Abre MakeCode
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+Para empezar a crear tu proyecto micro:bit, necesitas abrir el editor MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org)
+Abre el editor de MakeCode en [makecode.microbit.org](https://makecode.microbit.org)
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Versión sin conexión del editor
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app).
+También hay una versión [descargable del editor MakeCode](https://makecode.microbit.org/offline-app).
 
 --- /collapse ---
 
 --- /task ---
 
-Once the editor is open, you will need to create a new project and give your project a name.
+Una vez que el editor esté abierto, crea un nuevo proyecto y asígnale un nombre.
 
 --- task ---
 
-Click on the **New Project** button.
+Haz clic en el botón **Nuevo proyecto**.
 
-<img src="images/new-project-button.png" alt="The New Project button in MakeCode." width="250" />
+<img src="images/new-project-button.png" alt="El botón Nuevo proyecto en MakeCode." width="250" />
 
 --- /task ---
 
 --- task ---
 
-Give your new project the name `Hobby selector` and click **Create**.
+Dale a tu nuevo proyecto el nombre `Selector de pasatiempos` y haz clic en **Crear**.
 
-<img src="images/new-project.png" alt="The name 'Hobby selector' written in the Create a Project dialogue box." width="300" />
+<img src="images/new-project.png" alt="El nombre 'Selector de pasatiempos' escrito en el cuadro de diálogo Crear un proyecto." width="300" />
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**Consejo:** Para que tu proyecto sea más fácil de encontrar más tarde, dale un nombre útil que se relacione con lo que estás creando.
 
 --- /task ---
 
-### The MakeCode editor
+### El editor MakeCode
 
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need to start coding on micro:bit.
+Creado por la Fundación micro:bit, el editor **de MakeCode** tiene todo lo que necesitas para empezar a programar el micro:bit.
 
-![The MakeCode editor window](images/makecode-tour.png)
+![La ventana del editor MakeCode](images/makecode-tour.png)
 
-On the left-hand side, there is a **simulator**. This contains a virtual micro:bit that you can use to test your code!
+En el lado izquierdo, hay un **simulador**. ¡Este es un micro:bit virtual que puedes usar para probar tu código!
 
-It has all the features and buttons found on a V2 micro:bit, including:
-+ LED display
-+ Speaker
-+ Microphone
-+ Input buttons
+Tiene todas las funciones y botones que se encuentran en un micro:bit V2, incluyendo:
++ Pantalla LED
++ Altavoz
++ Micrófono
++ Botones de entrada
     + A
     + B
     + Logo
 
-In the centre, there is the **blocks panel**, which is colour-coded and allows you to access the various code blocks.
+En el centro se encuentra el panel de **bloques**, que está codificado por colores y permite acceder a varios bloques de código.
 
-On the right-hand side, there is the **code editor panel**, where you drag and drop blocks to create your program.
+En el lado derecho, está el **panel del editor de código**, donde arrastras y sueltas bloques para crear tu programa.
 
-The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
+El panel del editor MakeCode ya contiene dos bloques: `al iniciar`{:class='microbitbasic'} y `para siempre`{:class='microbitbasic'}.
 
-### Show icon
+### Mostrar icono
 
 You will use the `forever`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
 
