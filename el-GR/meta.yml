@@ -3,7 +3,7 @@ title: Επιλογέας χόμπι
 hero_image: images/banner.png
 description: Άφησε το micro:bit σου να επιλέξει ένα χόμπι για σένα
 version: 4
-listed: false
+listed: true
 copyedit: true
 last_tested: "2023-08-01"
 steps:

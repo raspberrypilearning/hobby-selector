@@ -3,7 +3,7 @@ title: Kies een hobby
 hero_image: images/banner.png
 description: Laat jouw micro:bit een hobby voor jou kiezen
 version: 4
-listed: false
+listed: true
 copyedit: true
 last_tested: "2023-08-01"
 steps:
