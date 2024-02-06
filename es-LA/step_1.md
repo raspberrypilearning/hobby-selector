@@ -95,15 +95,15 @@ El panel del editor MakeCode ya contiene dos bloques: `al iniciar`{:class='micro
 
 ### Mostrar icono
 
-You will use the `forever`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
+Utilizarás el bloque `para siempre`{:class='microbitbasic'} para ver cómo funcionan los LEDs en el simulador.
 
 --- task ---
 
-Click on the `Basic`{:class='microbitbasic'} block menu in the blocks panel. This will expand to show you the blocks available.
+Haz clic en el menú de bloques `Básico`{:class='microbitbasic'} en el panel de bloques. Se expandirá para mostrarte los bloques disponibles.
 
-<img src="images/basic-blocks.png" alt="The Basic block menu with the 'show icon' block highlighted." width="300" />
+<img src="images/basic-blocks.png" alt="El menú básico con el bloque 'Mostrar icono' resaltado." width="300" />
 
-Drag the `show icon`{:class='microbitbasic'} block and drop it **inside** the `forever`{:class='microbitbasic'} block. It should fit in place like a puzzle piece.
+Arrastra el bloque `mostrar el icono`{:class='microbitbasic'} y colócalo **dentro** del bloque `al iniciar`{:class='microbitbasic'}. Debe encajar en su lugar como una pieza de rompecabezas.
 
 ```microbit
 basic.forever(function () {
@@ -115,9 +115,9 @@ basic.forever(function () {
 
 --- task ---
 
-Click the down arrow on the show icon block and pick an icon.
+Haz clic en la flecha hacia abajo en el bloque mostrar el icono{: class='microbitbasic'} y elige un icono.
 
-<img src="images/show-icons.png" alt="The show icon menu expanded to display all the available icons." width="300" />
+<img src="images/show-icons.png" alt="El menú del icono de la serie se expandió para mostrar todos los iconos disponibles." width="300" />
 
 ![]()
 
@@ -125,70 +125,70 @@ Click the down arrow on the show icon block and pick an icon.
 
 --- task ---
 
-**Test:** Click the play button on the simulator. The LED display should light up, showing your chosen icon.
+**Prueba:** Haz clic en el botón Iniciar el simulador. La pantalla LED se debe encender, mostrando el icono elegido.
 
-In this example, we have chosen the `X` icon.
+En este ejemplo, hemos elegido el icono `X`.
 
-![The microbit simulator displaying an 'X' icon on its LEDs with the code blocks showing on the right.](images/led-display.png)
+![El simulador de microbits mostrando el ícono 'X' en sus LED con los bloques de código a la derecha.](images/led-display.png)
 
-Well done! You've made the micro:bit to do something!
-
---- /task ---
-
-### Choose your hobbies
-
---- task ---
-
-Choose three hobbies or activities you like to do in your spare time.
-
-Here are some ideas to get you started:
-+ 🎮 Gaming
-+ 📚 Reading
-+ 🧁 Baking
-+ 📺 Watching TV
-+ 🚶‍♀️ Going for a walk
-+ 🏐 Playing a sport
-+ 🎨 Drawing
+¡Bien hecho! ¡Has hecho que el micro:bit haga algo!
 
 --- /task ---
 
---- task ---
-
-Change your icon to one that represents your first hobby.
-
-We chose a Pac-Man ghost to represent gaming! 👻
-
---- /task ---
-
-### Create a variable
-
-You will use three different icons to represent three different hobbies.
-
-Each hobby will be linked to a number and you will create a variable so you can change which hobby is displayed.
+### Elige tus pasatiempos
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
+Elige tres pasatiempos o actividades que te gusten hacer en tu tiempo libre.
 
-<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted." width="350" />
+Aquí tienes algunas ideas para comenzar:
++ 🎮 Jugar videojuegos
++ 📚 Leer
++ 🧁 Hornear
++ 📺 Ver televisión
++ 🚶‍♀️ Salir a caminar
++ 🏐 Jugar un deporte
++ 🎨 Dibujar
 
 --- /task ---
 
 --- task ---
 
-Name the new variable `activity`, then click the **OK** button.
+Cambia tu ícono por uno que represente tu primer pasatiempo.
 
-<img src="images/variable-name.png" alt="The 'New variable name' window, with the name 'activity' written in the box." width="350" />
+¡Elegimos un fantasma de Pac-Man para representar los videojuegos! 👻
 
 --- /task ---
 
-You will now see that there are new blocks available. These blocks let you set, change, or use the value stored in the `activity`{:class='microbitvariables'} variable.
+### Crear una variable
 
-<img src="images/variable-blocks.png" alt="The Variables block menu - with new blocks to set the value, to change the value, and to use the value of the 'activity' variable in your code." width="350" />
+Utilizarás tres íconos diferentes para representar tres pasatiempos diferentes.
+
+Cada pasatiempo estará vinculado a un número y crearás una variable para poder cambiar qué pasatiempo se muestra.
 
 --- task ---
 
-Drag the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
+Abre el menú `Variables`{:class='microbitvariables'} y haz clic en **Crear una variable**.
+
+<img src="images/variable-menu.png" alt="El menú Variables abierto con el botón 'Crear una variable' resaltado." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Nombra la nueva variable `actividad`y haz clic en el botón **Aceptar**.
+
+<img src="images/variable-name.png" alt="La ventana 'Nombre de la nueva variable', con el nombre 'actividad' escrito en el cuadro." width="350" />
+
+--- /task ---
+
+Ahora verás que hay nuevos bloques disponibles. Estos bloques le permiten configurar, cambiar o usar el valor almacenado en la variable `actividad`{:class='microbitvariables'}.
+
+<img src="images/variable-blocks.png" alt="El menú de bloques de variables - con nuevos bloques para fijar el valor, para cambiar el valor, y para usar el valor de la variable 'actividad' en tu código." width="350" />
+
+--- task ---
+
+Arrastra el bloque `fijar`{:class='microbitvariables'} dentro del bloque `al iniciar`{:class='microbitbasic'}.
 
 ```microbit
 let activity = 0
