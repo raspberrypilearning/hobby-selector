@@ -250,8 +250,8 @@ Newidiwch yr ail `0` i `1`.
 
 ```microbit
 basic.forever(function () {
-    let activity = 0
-    if (activity == 1) {
+    let amserydd = 0
+    if (amserydd == 1) {
 
     }
     basic.showIcon(IconNames.Ghost)
@@ -365,7 +365,7 @@ Gallwch ddefnyddio'r bloc `dangos eicon`{:class='microbitbasic'} neu greu eich e
 --- collapse ---
 
 ---
-teitl: Defnyddio'r bloc dangos leds
+title: Defnyddio'r bloc dangos leds
 ---
 
 O'r ddewislen `Sylfaenol`{:class='microbitbasic'}, llusgwch y bloc `dangos LEDs`{:class='microbitbasic'} y tu mewn i floc `arall os`{:class='microbitlogic'}.
@@ -400,7 +400,7 @@ O'r ddewislen `Newidynnau`{:class='microbitvariables'}, llusgwch y bloc `gosod`{
 
 --- task ---
 
-O'r ddewislen `Mathemateg`{:class='microbitmath'}, llusgwch y bloc `dewis hap`{:class='microbitmath'} i'r `0` o'r bloc `gosod`{:class='microbitmath'}.
+O'r ddewislen `Mathemateg`{:class='microbitmath'}, llusgwch y bloc `dewis hap`{:class='microbitmath'} i'r `0` o'r bloc `gosod`{:class='microbitvariables'}.
 
 <img src="images/pick-random.png" alt="Mae'r ddewislen Mathemateg gyda'r bloc 'dewis ar hap 0 i 10' wedi'i amlygu." width="350" />
 
@@ -428,7 +428,7 @@ Llusgwch y `ar wasgu'r logo`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:cl
 --- collapse ---
 
 ---
-teitl: V1 defnyddwyr micro:bit
+title: V1 defnyddwyr micro:bit
 ---
 
 Mae mewnbwn y logo ar gael ar y micro:bit V2 yn unig.
@@ -493,7 +493,7 @@ Pan fyddwch wedi lawrlwytho'ch rhaglen i'ch micro:bit, bydd yn rhedeg ar unwaith
 
 ### Prosiect wedi'i gwblhau
 
-Os ydych am wirio'ch côd gallwch ddod o hyd i't [prosiect gorffenedig yma](https://makecode.microbit.org/S47133-08356-20146-01355){:target = "_blank"}.
+Os ydych am wirio'ch côd gallwch ddod o hyd i't [prosiect gorffenedig yma](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
 
 ### Uwchraddio eich prosiect
 
