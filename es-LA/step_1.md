@@ -196,19 +196,19 @@ let activity = 0
 
 --- /task ---
 
-### Which hobby will display?
+### ¿Qué pasatiempo se mostrará?
 
-When `activity`{:class='microbitvariables'} is set to `1`, the icon for your first hobby should display. When `activity`{:class='microbitvariables'} is set to `2`, the icon for the next hobby should display.
+Cuando `actividad`{:class='microbitvariables'} se establece en `1`, debería aparecer el ícono de tu primer pasatiempo. Cuando `actividad`{:class='microbitvariables'} se establece en `2`, debería aparecer el icono del siguiente pasatiempo.
 
-You will use `if... then` blocks to do this.
+Usarás bloques `si... entonces` para hacerlo.
 
 --- task ---
 
-Open the `Logic`{:class='microbitlogic'} menu and choose the `if`{:class='microbitlogic'} block.
+Abre el menú `lógica`{:class='microbitlogic'} y elige el bloque `si`{:class='microbitlogic'}.
 
-<img src="images/if-block.png" alt="The Logic block menu open with the 'if' block highlighted." width="350" />
+<img src="images/if-block.png" alt="El menú Lógica abierto con el bloque 'si' resaltado." width="350" />
 
-Drag the `if`{:class='microbitlogic'} block inside the `forever`{:class='microbitbasic'} loop block. Place it **above** your `show icon`{:class='microbitbasic'} block.
+Arrastra el bloque `si`{:class='microbitlogic'} dentro del bloque de bucle `para siempre`{:class='microbitbasic'}. Colócalo **encima de** tu bloque `mostrar icono`{:class='microbitbasic'}.
 
 ```microbit
 basic.forever(function () {
@@ -223,11 +223,11 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag out the comparison block `0 = 0`{:class='microbitlogic'}.
+Del menú `Lógica`{:class='microbitlogic'}, arrastra el bloque de comparación `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/condition-block.png" alt="The Logic block menu with the comparison block '0 = 0' highlighted." width="350" />
+<img src="images/condition-block.png" alt="El menú lógica con el bloque de comparación '0 = 0' resaltado." width="350" />
 
-Place it inside the `true` space within the `if`{:class='microbitlogic'} block.
+Colócalo dentro del bloque `verdadero` dentro del espacio `si`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -242,16 +242,16 @@ basic.forever(function () {
 
 --- task ---
 
-Go back to the `Variables`{:class='microbitvariables'} menu and pick the small block that says `activity`{:class='microbitvariables'}.
+Vuelve al menú `Variables`{:class='microbitvariables'} y elige el bloque pequeño que dice `actividad`{:class='microbitvariables'}.
 
-Drag this block to the **first** `0` in your new comparison block.
+Arrastra este bloque al **primer** `0` en tu nuevo bloque de comparación.
 
-Change the second `0` to `1`.
+Cambia el segundo `0` a `1`.
 
 ```microbit
 basic.forever(function () {
-    let activity = 0
-    if (activity == 1) {
+    let actividad= 0
+    if (actividad== 1) {
 
     }
     basic.showIcon(IconNames.Ghost)
@@ -262,7 +262,7 @@ basic.forever(function () {
 
 --- task ---
 
-Drag your `show icon`{:class='microbitbasic'} block **inside** the `if`{:class='microbitlogic'} block.
+Arrastra tu bloque `mostrar icono`{:class='microbitbasic'} **dentro del ** el bloque `si`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -277,67 +277,67 @@ basic.forever(function () {
 
 --- task ---
 
-**Test** your program:
+**Prueba** tu programa:
 
-When you make a change to a code block, the simulator will restart.
+Cuando hagas un cambio a un bloque de código, el simulador se reiniciará.
 
-You may have noticed that nothing appeared on the LEDs after your last change.
+Seguramente has notado que nada apareció en los LEDs después de tu último cambio.
 
-Find your `set`{:class='microbitvariables'} block again. Hint: it's inside the `on start`{:class='microbitbasic'} block.
+Encuentra de nuevo el bloque `establecer`{:class='microbitvariables'}. Pista: está dentro del bloque `al iniciar`{:class='microbitbasic'}.
 
-**Change** the `0` to `1`.
+**Cambia** la `0` a `1`.
 
-**Re-test**:
+**Vuelve a probar**:
 
-When the simulator restarts after your last change, the icon should appear.
+Cuando el simulador se reinicie después de tu último cambio, el icono debería aparecer.
 
-Make sure you **set the value of the activity variable back to `0`** ready for the next step.
-
---- /task ---
-
-### Add more hobbies
-
-To add more hobby options to your program, you will need to add more conditions to your `if`{:class='microbitlogic'} block.
-
---- task ---
-
-Click on the `+` symbol at the bottom of the `if` block. This will create an `else` block.
-
-<img src="images/if-plus-icon.png" alt="The + symbol in the bottom-left corner of the 'if block' inside the 'forever' loop." width="250" />
+Asegúrate de **establecer el valor de la variable actividad nuevamente en `0`** listo para el siguiente paso.
 
 --- /task ---
 
+### Añade más pasatiempos
+
+Para añadir más pasatiempos a tu programa, necesitarás añadir más condiciones a tu bloque `si`{:class='microbitlogic'}.
+
 --- task ---
 
-Click on the `+` symbol below the `else`{:class='microbitlogic'}. This will create an `else if`{:class='microbitlogic'}. Do this one more time so you have two `else if`{:class='microbitlogic'} blocks.
+Haz clic en el símbolo `+` en la parte inferior del bloque `si`{: class='microbitlogic'}. Esto creará un bloque `si no`.
+
+<img src="images/if-plus-icon.png" alt="El símbolo + en la esquina inferior izquierda del 'bloque si' dentro del bucle 'para siempre'." width="250" />
 
 --- /task ---
 
 --- task ---
 
-Now click on the `-` symbol next to the `else`{:class='microbitlogic'} to remove it.
-
-![Using the + symbol, an else and two else ifs are added to a condition. Next, the else is removed by clicking the - symbol next to it.](images/adding-ifs.gif)
+Haz clic en el símbolo `+` debajo de la `si no`{:class='microbitlogic'}. Esto creará un `si no`{:class='microbitlogic'}. Haga esto una vez más para tener dos bloques `si no`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Right click on the whole `=`{:class='microbitlogic'} block in the first `if`{:class='microbitlogic'} block.
+Ahora haz clic en el símbolo `-` junto a `si no`{:class='microbitlogic'} para eliminarlo.
 
-Click just to the left of the activity variable, or just to the right of the value `0`, to make sure you select the whole block.
-
-Click **Duplicate** to make a copy.
-
-Drag the duplicated `=`{:class='microbitlogic'} block into the first `else if`{:class='microbitlogic'} block. Then change the number `1` to a `2`.
-
-![The comparison block in the first if block is right clicked, and a menu appears. The first option, 'Duplicate', is clicked. A new version of the comparison block is created, and dragged into the first else if block.](images/duplicate-comparison.gif)
+![Usando el símbolo +, se agregan un entonces y dos si no a una condición. A continuación, eliminamos el entonces se haciendo clic en el símbolo de - junto a él.](images/adding-ifs.gif)
 
 --- /task ---
 
 --- task ---
 
-Duplicate the `=`{:class='microbitlogic'} block one more time and drag it into the second `else if`{:class='microbitlogic'} block. Then change the number to `3`.
+Haz clic derecho en todo el bloque `=`{:class='microbitlogic'} en el primer bloque `if`{:class='microbitlogic'}.
+
+Haz clic a la izquierda de la variable de actividad, o simplemente a la derecha del valor `0`para asegurarte de seleccionar todo el bloque.
+
+Haz clic en **Duplicar** para hacer una copia.
+
+Arrastre el bloque duplicado `=`{:class='microbitlogic'} al primer bloque `si no`{:class='microbitlogic'}. Luego cambia el número `1` a `2`.
+
+![Al hacer clic derecho en el bloque de comparación en el primer bloque if, aparece un menú. Se hace clic en la primera opción, "Duplicar". Se crea una nueva versión del bloque de comparación y se arrastra al primer bloque si no.](images/duplicate-comparison.gif)
+
+--- /task ---
+
+--- task ---
+
+Duplica el bloque `=`{:class='microbitlogic'} una vez más y arrástralo al segundo bloque `si no`{:class='microbitlogic'}. Luego cambia el número a `3`.
 
 ```microbit
 basic.forever(function () {
@@ -354,57 +354,57 @@ basic.forever(function () {
 
 --- /task ---
 
-### Style your hobbies
+### Dale estilo a tus pasatiempos
 
 --- task ---
 
-**Choose** two more images to represent your hobbies.
+**Elige** dos imágenes más para representar tus pasatiempos.
 
-You can use the `show icon`{:class='microbitbasic'} block or create your own icon using the `show leds`{:class='microbitbasic'} block.
+Puedes usar el bloque `mostrar ícono`{:class='microbitbasic'} o crear tu propio ícono usando el bloque `mostrar Leds`{:class='microbitbasic '}.
 
 --- collapse ---
 
 ---
-title: Using the show leds block
+title: Usando el bloque mostrar leds
 ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside an `else if`{:class='microbitlogic'} block.
+Arrastra el bloque `mostrar leds`{:class='microbitbasic'} del menú `Básico`{:class='microbitbasic'}, dentro de un bloque `si no, si`{:class='microbitlogic'}.
 
-<img src="images/show-leds.png" alt="The Basic menu with the 'show leds' block highlighted." width="350" />
+<img src="images/show-leds.png" alt="El menú básico con el bloque 'mostrar leds' resaltado." width="350" />
 
-You can click each of the squares to pick which ones you want to light up. White squares will be lit on the micro:bit.
+Puedes hacer clic en cada uno de los cuadrados para seleccionar los que quieras iluminar. Los cuadrados blancos se iluminarán en el micro:bit.
 
-<img src="images/draw-icon.png" alt="The 'show leds' block with a smiley face created in white squares." width="350" />
+<img src="images/draw-icon.png" alt="El bloque 'mostrar leds' con una cara sonriente creada en cuadrados blancos." width="350" />
 
 --- /collapse ---
 
 --- /task ---
 
-### Choose a random hobby
+### Elige un pasatiempo al azar
 
-**Set** the micro:bit to choose a random hobby when you shake it.
+**Configura** el micro:bit para elegir un pasatiempo aleatorio cuando lo agitas.
 
 --- task ---
 
-Drag the `on shake`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Arrastra el bloque `si agitado`{:class='microbitinput'} del menú `Entrada`{:class='microbitinput'}.
 
-<img src="images/on-shake.png" alt="The Input menu with the 'on shake' block highlighted." width="350" />
+<img src="images/on-shake.png" alt="El menú de entrada con el bloque 'si agitado' resaltado." width="350" />
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block inside the `on shake`{:class='microbitinput'} block.
+Del menú `Variables`{:class='microbitvariables'}, arrastra el bloque `fijar`{:class='microbitvariables'} dentro del bloque `si agitado`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, drag the `pick random`{:class='microbitmath'} block to the `0` of the `set`{:class='microbitvariables'} block.
+Arrastra el bloque `escoge al azar`{:class='microbitmath'} del menú the `Matemática`{:class='microbitmath'} al `0` del bloque `fijar`{:class='microbitvariables'}.
 
-<img src="images/pick-random.png" alt="The Math menu with the 'pick random 0 to 10' block highlighted." width="350" />
+<img src="images/pick-random.png" alt="El menú Matemática con el bloque 'escoger al azar de 0 a 10' resaltado." width="350" />
 
-Change the numbers `0 to 10` to `1 to 3`.
+Cambia los números `0 a 10` a `1 a 3`.
 
 ```microbit
 let activity = 0
@@ -415,27 +415,27 @@ input.onGesture(Gesture.Shake, function () {
 
 --- /task ---
 
-### Clear the display
+### Borrar la pantalla
 
-Use the touch-sensitive logo (V2) or a button (V1) to turn off the LEDs.
+Usa el logotipo táctil (V2) o un botón (V1) para apagar los LEDs.
 
 --- task ---
 
-Drag the `on logo pressed`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Arrastra el bloque `al pulsar el logotipo`{:class='microbitinput'} del menú `Entrada`{:class='microbitinput'}.
 
-<img src="images/onlogo-pressed.png" alt="The Input menu with the 'on logo pressed' block highlighted." width="350" />
+<img src="images/onlogo-pressed.png" alt="El menú Entrada con el bloque &quot;al pulsar el logotipo&quot; resaltado." width="350" />
 
 --- collapse ---
 
 ---
-title: V1 micro:bit users
+título: Usuarios de micro:bit V1
 ---
 
-The logo input is only available on the V2 micro:bit.
+La entrada del logotipo sólo está disponible en el micro:bit V2.
 
-For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the `Input`{:class='microbitinput'} menu.
+Para el micro:bit V1, usa el bloque `al presionar botón`{:class='microbitinput'} del menú `Entrada`{:class='microbitinput'}.
 
-<img src="images/button-a.png" alt="The Input menu with the 'on button A pressed' block highlighted." width="350" />
+<img src="images/button-a.png" alt="El menú de entrada con el bloque 'al presionar el botón A' resaltado." width="350" />
 
 --- /collapse ---
 
@@ -443,7 +443,7 @@ For the V1 micro:bit, use the `on button`{:class='microbitinput'} block from the
 
 --- task ---
 
-Drag the `clear screen`{:class='microbitbasic'} block from the `Basic`{:class='microbitbasic'} menu and place it inside the `on logo pressed`{:class='microbitinput'} block (or the `on button`{:class='microbitinput'} block for V1).
+Arrastra el bloque `borrar la pantalla`{:class='microbitbasic'} del menú `Básico`{:class='microbitbasic'} y colócalo dentro del bloque `al presonar el logotipo`{:class='microbitinput'} (o el bloque `al presionar el botón`{:class='microbitinput'} para V1).
 
 ```microbit
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -455,7 +455,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 --- task ---
 
-Now drag the `set`{:class='microbitvariables'} block from the `Variables`{:class='microbitvariables'} menu and place it below the `clear screen`{:class='microbitbasic'} block.
+Ahora arrastra el bloque `fijar`{:class='microbitvariables'} del menú `Variables`{:class='microbitvariables'} y colócalo debajo del bloque `borrar la pantalla`{:class='microbitbasic'}.
 
 ```microbit
 let activity = 0
@@ -469,39 +469,39 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 --- task ---
 
-**Test** your program:
+**Prueba** tu programa:
 
-**Click** the shake button on the simulator to randomly choose a hobby.
+**Haz clic** en el botón shake del simulador para elegir un pasatiempo al azar.
 
-**Use** the logo (or Button A on the V1 micro:bit) to make sure the screen clears.
+**Usa** el logotipo (o el botón A en el micro:bit V1) para asegurarte de que la pantalla se borre.
 
 --- /task ---
 
 --- task ---
 
-Download your code and test it on a physical micro:bit!
+¡Descarga tu código y pruébalo en un micro:bit físico!
 
 [[[download-to-microbit]]]
 
-When you have downloaded your program to your micro:bit, it will run immediately.
+Cuando hayas descargado tu programa a tu micro:bit, se ejecutará inmediatamente.
 
-**Test**: You should see a random icon each time you shake the micro:bit.
+**Prueba**: Deberías ver un ícono aleatorio cada vez que agitas el micro:bit.
 
 --- /task ---
 
 [[[microbit-share]]]
 
-### Completed project
+### Proyecto terminado
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
+Si quieres comprobar tu código puedes encontrar [el proyecto completo aquí](https://makecode.microbit.org/S47133-08356-20146-01355){:target="_blank"}.
 
-### Upgrade your project
+### Mejora tu proyecto
 
-You can upgrade your project to make it more engaging:
+Puedes mejorar tu proyecto para hacerlo más atractivo:
 
-+ Add more hobbies so you have a wider range to choose from.
++ Agrega más pasatiempos para tener una gama más amplia para elegir.
 
-Remember to:
-  + Add a different symbol to display for each activity
-  + Increase the number of `else if` blocks so you can add more icons
-  + Increase the random range to more than three to match the number of added hobbies
+Recuerda:
+  + Añade un símbolo diferente para mostrar por cada actividad
+  + Aumente el número de bloques `si no, si` para poder agregar más íconos
+  + Aumenta el rango aleatorio a más de tres para que coincida con el número de pasatiempos que agregaste
