@@ -56,7 +56,7 @@ Una vez que el editor esté abierto, crea un nuevo proyecto y asígnale un nombr
 
 Haz clic en el botón **Nuevo proyecto**.
 
-<img src="images/new-project-button.png" alt="El botón Nuevo proyecto en MakeCode." width="250" />
+<img src="images/new-project-button.png" alt="El botón Nuevo proyecto en MakeCode." width="250"/>
 
 --- /task ---
 
@@ -64,7 +64,7 @@ Haz clic en el botón **Nuevo proyecto**.
 
 Dale a tu nuevo proyecto el nombre `Selector de pasatiempos` y haz clic en **Crear**.
 
-<img src="images/new-project.png" alt="El nombre 'Selector de pasatiempos' escrito en el cuadro de diálogo Crear un proyecto." width="300" />
+<img src="images/new-project.png" alt="El nombre 'Selector de pasatiempos' escrito en el cuadro de diálogo Crear un proyecto." width="300"/>
 
 **Consejo:** Para que tu proyecto sea más fácil de encontrar más tarde, dale un nombre útil que se relacione con lo que estás creando.
 
@@ -101,7 +101,7 @@ Utilizarás el bloque `para siempre`{:class='microbitbasic'} para ver cómo func
 
 Haz clic en el menú de bloques `Básico`{:class='microbitbasic'} en el panel de bloques. Se expandirá para mostrarte los bloques disponibles.
 
-<img src="images/basic-blocks.png" alt="El menú básico con el bloque 'Mostrar icono' resaltado." width="300" />
+<img src="images/basic-blocks.png" alt="El menú básico con el bloque 'Mostrar icono' resaltado." width="300"/>
 
 Arrastra el bloque `mostrar el icono`{:class='microbitbasic'} y colócalo **dentro** del bloque `al iniciar`{:class='microbitbasic'}. Debe encajar en su lugar como una pieza de rompecabezas.
 
@@ -117,7 +117,7 @@ basic.forever(function () {
 
 Haz clic en la flecha hacia abajo en el bloque mostrar el icono{: class='microbitbasic'} y elige un icono.
 
-<img src="images/show-icons.png" alt="El menú del icono de la serie se expandió para mostrar todos los iconos disponibles." width="300" />
+<img src="images/show-icons.png" alt="El menú del icono de la serie se expandió para mostrar todos los iconos disponibles." width="300"/>
 
 ![]()
 
@@ -170,7 +170,7 @@ Cada pasatiempo estará vinculado a un número y crearás una variable para pode
 
 Abre el menú `Variables`{:class='microbitvariables'} y haz clic en **Crear una variable**.
 
-<img src="images/variable-menu.png" alt="El menú Variables abierto con el botón 'Crear una variable' resaltado." width="350" />
+<img src="images/variable-menu.png" alt="El menú Variables abierto con el botón 'Crear una variable' resaltado." width="350"/>
 
 --- /task ---
 
@@ -178,20 +178,20 @@ Abre el menú `Variables`{:class='microbitvariables'} y haz clic en **Crear una 
 
 Nombra la nueva variable `actividad`y haz clic en el botón **Aceptar**.
 
-<img src="images/variable-name.png" alt="La ventana 'Nombre de la nueva variable', con el nombre 'actividad' escrito en el cuadro." width="350" />
+<img src="images/variable-name.png" alt="La ventana 'Nombre de la nueva variable', con el nombre 'actividad' escrito en el cuadro." width="350"/>
 
 --- /task ---
 
 Ahora verás que hay nuevos bloques disponibles. Estos bloques le permiten configurar, cambiar o usar el valor almacenado en la variable `actividad`{:class='microbitvariables'}.
 
-<img src="images/variable-blocks.png" alt="El menú de bloques de variables - con nuevos bloques para fijar el valor, para cambiar el valor, y para usar el valor de la variable 'actividad' en tu código." width="350" />
+<img src="images/variable-blocks.png" alt="El menú de bloques de variables - con nuevos bloques para fijar el valor, para cambiar el valor, y para usar el valor de la variable 'actividad' en tu código." width="350"/>
 
 --- task ---
 
 Arrastra el bloque `fijar`{:class='microbitvariables'} dentro del bloque `al iniciar`{:class='microbitbasic'}.
 
 ```microbit
-let activity = 0
+let actividad = 0
 ```
 
 --- /task ---
@@ -206,7 +206,7 @@ Usarás bloques `si... entonces` para hacerlo.
 
 Abre el menú `lógica`{:class='microbitlogic'} y elige el bloque `si`{:class='microbitlogic'}.
 
-<img src="images/if-block.png" alt="El menú Lógica abierto con el bloque 'si' resaltado." width="350" />
+<img src="images/if-block.png" alt="El menú Lógica abierto con el bloque 'si' resaltado." width="350"/>
 
 Arrastra el bloque `si`{:class='microbitlogic'} dentro del bloque de bucle `para siempre`{:class='microbitbasic'}. Colócalo **encima de** tu bloque `mostrar icono`{:class='microbitbasic'}.
 
@@ -225,7 +225,7 @@ basic.forever(function () {
 
 Del menú `Lógica`{:class='microbitlogic'}, arrastra el bloque de comparación `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/condition-block.png" alt="El menú lógica con el bloque de comparación '0 = 0' resaltado." width="350" />
+<img src="images/condition-block.png" alt="El menú lógica con el bloque de comparación '0 = 0' resaltado." width="350"/>
 
 Colócalo dentro del bloque `verdadero` dentro del espacio `si`{:class='microbitlogic'}.
 
@@ -266,8 +266,8 @@ Arrastra tu bloque `mostrar icono`{:class='microbitbasic'} **dentro del** el blo
 
 ```microbit
 basic.forever(function () {
-    let activity = 0
-    if (activity == 1) {
+    let actividad = 0
+    if (actividad == 1) {
         basic.showIcon(IconNames.Ghost)
     }
 })
@@ -303,7 +303,7 @@ Para añadir más pasatiempos a tu programa, necesitarás añadir más condicion
 
 Haz clic en el símbolo `+` en la parte inferior del bloque `si`{: class='microbitlogic'}. Esto creará un bloque `si no`.
 
-<img src="images/if-plus-icon.png" alt="El símbolo + en la esquina inferior izquierda del 'bloque si' dentro del bucle 'para siempre'." width="250" />
+<img src="images/if-plus-icon.png" alt="El símbolo + en la esquina inferior izquierda del 'bloque si' dentro del bucle 'para siempre'." width="250"/>
 
 --- /task ---
 
@@ -341,12 +341,12 @@ Duplica el bloque `=`{:class='microbitlogic'} una vez más y arrástralo al segu
 
 ```microbit
 basic.forever(function () {
-    let activity = 0
-    if (activity == 1) {
+    let actividad = 0
+    if (actividad == 1) {
         basic.showIcon(IconNames.Ghost)
-    } else if (activity == 2) {
+    } else if (actividad == 2) {
 
-    } else if (activity == 3) {
+    } else if (actividad == 3) {
 
     }
 })
@@ -370,7 +370,7 @@ title: Usando el bloque mostrar leds
 
 Arrastra el bloque `mostrar leds`{:class='microbitbasic'} del menú `Básico`{:class='microbitbasic'}, dentro de un bloque `si no, si`{:class='microbitlogic'}.
 
-<img src="images/show-leds.png" alt="El menú básico con el bloque 'mostrar leds' resaltado." width="350" />
+<img src="images/show-leds.png" alt="El menú básico con el bloque 'mostrar leds' resaltado." width="350"/>
 
 Puedes hacer clic en cada uno de los cuadrados para seleccionar los que quieras iluminar. Los cuadrados blancos se iluminarán en el micro:bit.
 
@@ -388,7 +388,7 @@ Puedes hacer clic en cada uno de los cuadrados para seleccionar los que quieras 
 
 Arrastra el bloque `si agitado`{:class='microbitinput'} del menú `Entrada`{:class='microbitinput'}.
 
-<img src="images/on-shake.png" alt="El menú de entrada con el bloque 'si agitado' resaltado." width="350" />
+<img src="images/on-shake.png" alt="El menú de entrada con el bloque 'si agitado' resaltado." width="350"/>
 
 --- /task ---
 
@@ -402,14 +402,14 @@ Del menú `Variables`{:class='microbitvariables'}, arrastra el bloque `fijar`{:c
 
 Arrastra el bloque `escoge al azar`{:class='microbitmath'} del menú the `Matemática`{:class='microbitmath'} al `0` del bloque `fijar`{:class='microbitvariables'}.
 
-<img src="images/pick-random.png" alt="El menú Matemática con el bloque 'escoger al azar de 0 a 10' resaltado." width="350" />
+<img src="images/pick-random.png" alt="El menú Matemática con el bloque 'escoger al azar de 0 a 10' resaltado." width="350"/>
 
 Cambia los números `0 a 10` a `1 a 3`.
 
 ```microbit
-let activity = 0
+let actividad = 0
 input.onGesture(Gesture.Shake, function () {
-    activity = randint(1, 3)
+    actividad = randint(1, 3)
 })
 ```
 
@@ -423,7 +423,7 @@ Usa el logotipo táctil (V2) o un botón (V1) para apagar los LEDs.
 
 Arrastra el bloque `al pulsar el logotipo`{:class='microbitinput'} del menú `Entrada`{:class='microbitinput'}.
 
-<img src="images/onlogo-pressed.png" alt="El menú Entrada con el bloque &quot;al pulsar el logotipo&quot; resaltado." width="350" />
+<img src="images/onlogo-pressed.png" alt="El menú Entrada con el bloque &quot;al pulsar el logotipo&quot; resaltado." width="350"/>
 
 --- collapse ---
 
@@ -435,7 +435,7 @@ La entrada del logotipo sólo está disponible en el micro:bit V2.
 
 Para el micro:bit V1, usa el bloque `al presionar botón`{:class='microbitinput'} del menú `Entrada`{:class='microbitinput'}.
 
-<img src="images/button-a.png" alt="El menú de entrada con el bloque 'al presionar el botón A' resaltado." width="350" />
+<img src="images/button-a.png" alt="El menú de entrada con el bloque 'al presionar el botón A' resaltado." width="350"/>
 
 --- /collapse ---
 
@@ -458,10 +458,10 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 Ahora arrastra el bloque `fijar`{:class='microbitvariables'} del menú `Variables`{:class='microbitvariables'} y colócalo debajo del bloque `borrar la pantalla`{:class='microbitbasic'}.
 
 ```microbit
-let activity = 0
+let actividad = 0
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.clearScreen()
-    activity = 0
+    actividad = 0
 })
 ```
 
@@ -507,12 +507,9 @@ Recuerda:
   + Aumenta el rango aleatorio a más de tres para que coincida con el número de pasatiempos que agregaste
 
 ***
+
 Este proyecto fue traducido por voluntarios:
 
-[name]
-
-[name]
-
-[name]
+Laura Lurati
 
 Gracias a los voluntarios, podemos dar a las personas de todo el mundo la oportunidad de aprender en su propio idioma. Puedes ayudarnos a llegar a más personas ofreciéndote como voluntario para traducir. Más información en [rpf.io/translate](https://rpf.io/translate).
