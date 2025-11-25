@@ -262,7 +262,7 @@ basic.forever(function () {
 
 --- task ---
 
-Arrastra tu bloque `mostrar icono`{:class='microbitbasic'} **dentro del ** el bloque `si`{:class='microbitlogic'}.
+Arrastra tu bloque `mostrar icono`{:class='microbitbasic'} **dentro del** el bloque `si`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -505,3 +505,14 @@ Recuerda:
   + Añade un símbolo diferente para mostrar por cada actividad
   + Aumente el número de bloques `si no, si` para poder agregar más íconos
   + Aumenta el rango aleatorio a más de tres para que coincida con el número de pasatiempos que agregaste
+
+***
+Este proyecto fue traducido por voluntarios:
+
+[name]
+
+[name]
+
+[name]
+
+Gracias a los voluntarios, podemos dar a las personas de todo el mundo la oportunidad de aprender en su propio idioma. Puedes ayudarnos a llegar a más personas ofreciéndote como voluntario para traducir. Más información en [rpf.io/translate](https://rpf.io/translate).

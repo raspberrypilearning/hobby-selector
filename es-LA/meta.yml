@@ -1,3 +1,4 @@
+---
 title: Selector de pasatiempos
 hero_image: images/banner.png
 description: Deja que tu micro:bit elija un pasatiempo para ti
@@ -6,5 +7,4 @@ listed: true
 copyedit: true
 last_tested: "2023-08-01"
 steps:
-  - 
-    title: '¡Aleatoriza tus pasatiempos!'
+  - title: '¡Aleatoriza tus pasatiempos!'
