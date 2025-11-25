@@ -506,13 +506,3 @@ N’oubliez pas :
   + Augmenter le nombre de blocs `sinon si` afin de pouvoir ajouter plus d'icônes
   + Augmenter la plage aléatoire à plus de trois pour correspondre au nombre de loisirs ajoutés
 
-***
-Ce projet a été traduit par des bénévoles:
-
-[name]
-
-[name]
-
-[name]
-
-Grâce aux bénévoles, nous pouvons donner aux gens du monde entier la chance d'apprendre dans leur propre langue. Vous pouvez nous aider à atteindre plus de personnes en vous portant volontaire pour la traduction - plus d'informations sur [rpf.io/translate](https://rpf.io/translate).

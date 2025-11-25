@@ -506,13 +506,3 @@ Vergeet niet om:
   + Verhoog het aantal `anders als` blokken zodat je meer iconen kunt toevoegen
   + Verhoog het willekeurige bereik tot meer dan drie zodat het overeen komt met het aantal toegevoegde hobby's
 
-***
-Dit project werd vertaald door vrijwilligers:
-
-[name]
-
-[name]
-
-[name]
-
-Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
