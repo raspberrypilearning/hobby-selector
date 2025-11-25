@@ -505,3 +505,4 @@ Vergeet niet om:
   + Een ander symbool toe te voegen om elke nieuwe activiteit
   + Verhoog het aantal `anders als` blokken zodat je meer iconen kunt toevoegen
   + Verhoog het willekeurige bereik tot meer dan drie zodat het overeen komt met het aantal toegevoegde hobby's
+

@@ -505,3 +505,4 @@ N’oubliez pas :
   + Ajouter un symbole différent à afficher pour chaque activité
   + Augmenter le nombre de blocs `sinon si` afin de pouvoir ajouter plus d'icônes
   + Augmenter la plage aléatoire à plus de trois pour correspondre au nombre de loisirs ajoutés
+
