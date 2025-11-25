@@ -20,7 +20,7 @@ Vas a:
 
 --- task ---
 
-¿Qué pasa si **sacudes** el micro:bit? ¿Qué sucede si haces clic en el logo ****?
+¿Qué pasa si **sacudes** el micro:bit? ¿Qué sucede si haces clic en el **logo**?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S47133-08356-20146-01355" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -428,7 +428,7 @@ Arrastra el bloque `al pulsar el logotipo`{:class='microbitinput'} del menú `En
 --- collapse ---
 
 ---
-título: Usuarios de micro:bit V1
+title: Usuarios de micro:bit V1
 ---
 
 La entrada del logotipo sólo está disponible en el micro:bit V2.
