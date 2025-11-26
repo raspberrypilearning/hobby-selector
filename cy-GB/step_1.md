@@ -56,7 +56,7 @@ Unwaith y bydd y golygydd ar agor, bydd angen i chi greu prosiect newydd a rhoi 
 
 Cliciwch ar y botwm **Prosiect Newydd**.
 
-<img src="images/new-project-button.png" alt="Y botwm Prosiect Newydd yn MakeCode." width="250"/>
+<img src="images/new-project-button.png" alt="Y botwm Prosiect Newydd yn MakeCode." width="250" />
 
 --- /task ---
 
@@ -64,7 +64,7 @@ Cliciwch ar y botwm **Prosiect Newydd**.
 
 Rhowch yr enw `Hobby selector` i'ch prosiect newydd a chliciwch **Creu**.
 
-<img src="images/new-project.png" alt="Mae'r enw 'Hobby selector' wedi'i ysgrifennu yn y blwch deialog Creu Prosiect." width="300"/>
+<img src="images/new-project.png" alt="Mae'r enw 'Hobby selector' wedi'i ysgrifennu yn y blwch deialog Creu Prosiect." width="300" />
 
 **Awgrym:** Er mwyn ei gwneud hi'n haws dod o hyd i'ch prosiect yn nes ymlaen, rhowch enw defnyddiol iddo sy'n ymwneud â'r gweithgaredd rydych chi'n ei greu.
 
@@ -101,7 +101,7 @@ Byddwch yn defnyddio'r bloc `am byth`{:class='microbitbasic'} i weld sut mae'r L
 
 Cliciwch ar y ddewislen bloc `Sylfaenol`{:class='microbitbasic'} yn y panel blociau. Bydd hyn yn ehangu i ddangos y blociau sydd ar gael i chi.
 
-<img src="images/basic-blocks.png" alt="Mae'r ddewislen bloc Sylfaenol gyda'r bloc 'eicon dangos' wedi'i amlygu." width="300"/>
+<img src="images/basic-blocks.png" alt="Mae'r ddewislen bloc Sylfaenol gyda'r bloc 'eicon dangos' wedi'i amlygu." width="300" />
 
 Llusgwch yr bloc `dangos eicon`{:class='microbitbasic'} a'i ollwng **y tu mewn i**'r bloc `am byth`{:class='microbitbasic'}. Dylai hwn ffitio yn ei le fel darn pos.
 
@@ -117,7 +117,7 @@ basic.forever(function () {
 
 Cliciwch ar y saeth i lawr ar y bloc dangos eicon a dewis eicon.
 
-<img src="images/show-icons.png" alt="Ehangodd y ddewislen dangos eicon i ddangos yr holl eiconau sydd ar gael." width="300"/>
+<img src="images/show-icons.png" alt="Ehangodd y ddewislen dangos eicon i ddangos yr holl eiconau sydd ar gael." width="300" />
 
 ![]()
 
@@ -170,7 +170,7 @@ Bydd pob hobi yn gysylltiedig â rhif a byddwch yn creu newidyn er mwyn i chi al
 
 Agorwch y ddewislen `Newidynnau`{:class='microbitvariables'}, a chliciwch **Gwneud newidyn**.
 
-<img src="images/variable-menu.png" alt="Y ddewislen bloc Newidynnau. Agorwch gyda'r botwm 'Gwneud newidyn' wedi'i amlygu." width="350"/>
+<img src="images/variable-menu.png" alt="Y ddewislen bloc Newidynnau. Agorwch gyda'r botwm 'Gwneud newidyn' wedi'i amlygu." width="350" />
 
 --- /task ---
 
@@ -178,27 +178,27 @@ Agorwch y ddewislen `Newidynnau`{:class='microbitvariables'}, a chliciwch **Gwne
 
 Enwch y newidyn newydd `amserydd`, yna cliciwch ar y botwm **OK**.
 
-<img src="images/variable-name.png" alt="Y ffenestr 'Enw newidyn newydd', gyda'r enw 'gweithgaredd' wedi'i ysgrifennu yn y blwch." width="350"/>
+<img src="images/variable-name.png" alt="Y ffenestr 'Enw newidyn newydd', gyda'r enw 'gweithgaredd' wedi'i ysgrifennu yn y blwch." width="350" />
 
 --- /task ---
 
 Fe welwch nawr fod blociau newydd ar gael. Mae'r blociau hyn yn gadael i chi osod, newid, neu ddefnyddio'r gwerth sydd wedi'i storio yn y newidyn `gweithgaredd`{:class='microbitvariables'}.
 
-<img src="images/variable-blocks.png" alt="Y ddewislen bloc Newidynnau - gyda blociau newydd i osod y gwerth, i newid y gwerth, ac i ddefnyddio gwerth y newidyn 'gweithgaredd' yn eich côd." width="350"/>
+<img src="images/variable-blocks.png" alt="Y ddewislen bloc Newidynnau - gyda blociau newydd i osod y gwerth, i newid y gwerth, ac i ddefnyddio gwerth y newidyn 'gweithgaredd' yn eich côd." width="350" />
 
 --- task ---
 
 Llusgwch y bloc `gosod`{:class='microbitvariables'} y tu mewn i'r bloc `ar gychwyn`{:class='microbitbasic'}.
 
 ```microbit
-let amserydd = 0
+let activity = 0
 ```
 
 --- /task ---
 
 ### Pa hobi fydd yn arddangos?
 
-Pan fydd `gweithgaredd`{:class='microbitvariables'} wedi'i osod i `1`, dylai'r eicon ar gyfer eich hobi cyntaf ddangos. Pan fydd `gweithgaredd`{:class='microbitvariables'} wedi'i osod i `2`, dylai'r eicon ar gyfer yr hobi nesaf ddangos.
+Pan fydd `gweithgaredd`{ :class = 'microbitvariables'} wedi'i osod i `1`, dylai'r eicon ar gyfer eich hobi cyntaf ddangos. Pan fydd `gweithgaredd`{ :class = 'microbitvariables'} wedi'i osod i `2`, dylai'r eicon ar gyfer yr hobi nesaf ddangos.
 
 Byddwch yn defnyddio blociau `os... yna` i wneud hyn.
 
@@ -206,7 +206,7 @@ Byddwch yn defnyddio blociau `os... yna` i wneud hyn.
 
 Agorwch y ddewislen `Rhesymeg`{:class='microbitlogic'} a dewiswch y bloc `os`{:class='microbitlogic'}.
 
-<img src="images/if-block.png" alt="Mae'r ddewislen bloc Rhesymeg ar agor gyda'r bloc 'os' wedi'i amlygu." width="350"/>
+<img src="images/if-block.png" alt="Mae'r ddewislen bloc Rhesymeg ar agor gyda'r bloc 'os' wedi'i amlygu." width="350" />
 
 Llusgwch y bloc `os`{:class='microbitlogic'} y tu mewn i'r bloc dolen `am byth`{:class='microbitbasic'}. Rhowch ef **uwchben** eich bloc `dangos eicon`{:class='microbitbasic'}.
 
@@ -225,7 +225,7 @@ basic.forever(function () {
 
 O'r ddewislen `Rhesymeg`{:class='microbitlogic'}, llusgwch allan y bloc cymharu `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/condition-block.png" alt="Y ddewislen bloc Rhesymeg gyda'r bloc cymharu '0 = 0' wedi'i amlygu." width="350"/>
+<img src="images/condition-block.png" alt="Y ddewislen bloc Rhesymeg gyda'r bloc cymharu '0 = 0' wedi'i amlygu." width="350" />
 
 Rhowch ef y tu mewn i'r bwlch `gwir` o fewn y bloc `os`{:class='microbitlogic'}.
 
@@ -266,8 +266,8 @@ Llusgwch eich bloc `dangos eicon`{:class='microbitbasic'} **y tu mewn i**'r bloc
 
 ```microbit
 basic.forever(function () {
-    let amserydd = 0
-    if (amserydd == 1) {
+    let activity = 0
+    if (activity == 1) {
         basic.showIcon(IconNames.Ghost)
     }
 })
@@ -303,7 +303,7 @@ I ychwanegu mwy o opsiynau hobi at eich rhaglen, bydd angen i chi ychwanegu mwy 
 
 Cliciwch ar y symbol `+` ar waelod y bloc `os`. Bydd hyn yn creu bloc `arall`.
 
-<img src="images/if-plus-icon.png" alt="Y symbol + yng nghornel chwith isaf y bloc 'os' y tu mewn i'r ddolen 'am byth'." width="250"/>
+<img src="images/if-plus-icon.png" alt="Y symbol + yng nghornel chwith isaf y bloc 'os' y tu mewn i'r ddolen 'am byth'." width="250" />
 
 --- /task ---
 
@@ -341,12 +341,12 @@ Dyblygwch y bloc `=`{:class='microbitlogic'} unwaith eto a llusgwch ef i'r ail f
 
 ```microbit
 basic.forever(function () {
-    let amserydd = 0
-    if (amserydd == 1) {
+    let activity = 0
+    if (activity == 1) {
         basic.showIcon(IconNames.Ghost)
-    } else if (amserydd == 2) {
+    } else if (activity == 2) {
 
-    } else if (amserydd == 3) {
+    } else if (activity == 3) {
 
     }
 })
@@ -370,11 +370,11 @@ title: Defnyddio'r bloc dangos leds
 
 O'r ddewislen `Sylfaenol`{:class='microbitbasic'}, llusgwch y bloc `dangos LEDs`{:class='microbitbasic'} y tu mewn i floc `arall os`{:class='microbitlogic'}.
 
-<img src="images/show-leds.png" alt="Amlygwyd y ddewislen Sylfaenol gyda'r bloc 'dangos led'." width="350"/>
+<img src="images/show-leds.png" alt="Amlygwyd y ddewislen Sylfaenol gyda'r bloc 'dangos led'." width="350" />
 
 Gallwch glicio ar bob un o'r sgwariau i ddewis pa rai rydych chi am eu goleuo. Bydd sgwariau gwyn yn cael eu goleuo ar y micro:bit.
 
-<img src="images/draw-icon.png" alt="Y bloc 'dangos leds' gyda wyneb gwenu wedi'i greu mewn sgwariau gwyn." width="350"/>
+<img src="images/draw-icon.png" alt="Y bloc 'dangos leds' gyda wyneb gwenu wedi'i greu mewn sgwariau gwyn." width="350" />
 
 --- /collapse ---
 
@@ -388,7 +388,7 @@ Gallwch glicio ar bob un o'r sgwariau i ddewis pa rai rydych chi am eu goleuo. B
 
 Llusgwch y bloc `ar ysgwyd`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:class='microbitinput'}.
 
-<img src="images/on-shake.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar ysgwyd' wedi'i amlygu." width="350"/>
+<img src="images/on-shake.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar ysgwyd' wedi'i amlygu." width="350" />
 
 --- /task ---
 
@@ -402,14 +402,14 @@ O'r ddewislen `Newidynnau`{:class='microbitvariables'}, llusgwch y bloc `gosod`{
 
 O'r ddewislen `Mathemateg`{:class='microbitmath'}, llusgwch y bloc `dewis hap`{:class='microbitmath'} i'r `0` o'r bloc `gosod`{:class='microbitvariables'}.
 
-<img src="images/pick-random.png" alt="Mae'r ddewislen Mathemateg gyda'r bloc 'dewis ar hap 0 i 10' wedi'i amlygu." width="350"/>
+<img src="images/pick-random.png" alt="Mae'r ddewislen Mathemateg gyda'r bloc 'dewis ar hap 0 i 10' wedi'i amlygu." width="350" />
 
 Newidiwch y rhifau `0 i 10` i `1 i 3`.
 
 ```microbit
-let amserydd = 0
+let activity = 0
 input.onGesture(Gesture.Shake, function () {
-    amserydd = randint(1, 3)
+    activity = randint(1, 3)
 })
 ```
 
@@ -423,7 +423,7 @@ Defnyddiwch y logo cyffwrdd-sensitif (V2) neu fotwm (V1) i ddiffodd y LEDs.
 
 Llusgwch y `ar wasgu'r logo`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:class='microbitinput'}.
 
-<img src="images/onlogo-pressed.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar wasgu'r logo' wedi'i amlygu." width="350"/>
+<img src="images/onlogo-pressed.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar wasgu'r logo' wedi'i amlygu." width="350" />
 
 --- collapse ---
 
@@ -435,7 +435,7 @@ Mae mewnbwn y logo ar gael ar y micro:bit V2 yn unig.
 
 Ar gyfer y micro:bit V1, defnyddiwch y bloc `ar fotwm`{:class='microbitinput'} o'r ddewislen `Mewnbwn`{:class='microbitinput'}.
 
-<img src="images/button-a.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar wasgu'r fotwm A' wedi'i amlygu." width="350"/>
+<img src="images/button-a.png" alt="Mae'r ddewislen Mewnbwn gyda'r bloc 'ar wasgu'r fotwm A' wedi'i amlygu." width="350" />
 
 --- /collapse ---
 
@@ -458,10 +458,10 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 Nawr llusgwch y bloc `gosod`{:class='microbitvariables'} o'r ddewislen `Newidynnau`{:class='microbitvariables'} a'i osod o dan y bloc `clirio sgrîn`{:class='microbitbasic'}.
 
 ```microbit
-let amserydd = 0
+let activity = 0
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.clearScreen()
-    amserydd = 0
+    activity = 0
 })
 ```
 
