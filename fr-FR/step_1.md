@@ -56,7 +56,7 @@ Une fois que l'éditeur est ouvert, tu devras créer un nouveau projet et donner
 
 Clique sur le bouton **Nouveau projet**.
 
-<img src="images/new-project-button.png" alt="Le bouton Nouveau projet dans MakeCode." width="250"/>
+<img src="images/new-project-button.png" alt="Le bouton Nouveau projet dans MakeCode." width="250" />
 
 --- /task ---
 
@@ -64,7 +64,7 @@ Clique sur le bouton **Nouveau projet**.
 
 Donne à ton nouveau projet le nom `Sélecteur de loisirs` et clique sur **Créer**.
 
-<img src="images/new-project.png" alt="Le nom « Sélecteur de loisirs » écrit dans la boîte de dialogue Créer un projet." width="300"/>
+<img src="images/new-project.png" alt="Le nom « Sélecteur de loisirs » écrit dans la boîte de dialogue Créer un projet." width="300" />
 
 **Astuce :** pour faciliter la recherche de ton projet plus tard, donne-lui un nom utile qui se rapporte à l'activité que tu crées.
 
@@ -101,7 +101,7 @@ Tu utiliseras le bloc `toujours`{:class='microbitbasic'} pour voir comment fonct
 
 Clique sur le menu bloc `Base`{:class='microbitbasic'} dans le panneau des blocs. Cela va l'étendre pour te montrer les blocs disponibles.
 
-<img src="images/basic-blocks.png" alt="Le menu de base avec le bloc « montrer l'icône » en surbrillance." width="300"/>
+<img src="images/basic-blocks.png" alt="Le menu de base avec le bloc « montrer l'icône » en surbrillance." width="300" />
 
 Fais glisser le bloc `montrer l'icône`{:class='microbitbasic'} et place-le **à l'intérieur du** bloc `toujours`{:class='microbitbasic'}. Cela devrait s’emboîter comme une pièce de puzzle.
 
@@ -117,7 +117,7 @@ basic.forever(function () {
 
 Clique sur la flèche vers le bas sur le bloc Montrer l'icône et choisis une icône.
 
-<img src="images/show-icons.png" alt="Le menu montrer l'icône s'est développé pour afficher toutes les icônes disponibles." width="300"/>
+<img src="images/show-icons.png" alt="Le menu montrer l'icône s'est développé pour afficher toutes les icônes disponibles." width="300" />
 
 ![]()
 
@@ -170,7 +170,7 @@ Chaque loisir sera lié à un nombre et tu créeras une variable de sorte que tu
 
 Ouvre le menu `Variables`{:class='microbitvariables'} et clique sur **Créer une variable**.
 
-<img src="images/variable-menu.png" alt="Le menu Bloc Variables, ouvert avec le bouton « Créer une variable » en surbrillance." width="350"/>
+<img src="images/variable-menu.png" alt="Le menu Bloc Variables, ouvert avec le bouton « Créer une variable » en surbrillance." width="350" />
 
 --- /task ---
 
@@ -178,20 +178,20 @@ Ouvre le menu `Variables`{:class='microbitvariables'} et clique sur **Créer une
 
 Nomme la nouvelle variable `activité`, puis clique sur le bouton **OK**.
 
-<img src="images/variable-name.png" alt="La fenêtre « Nouveau nom de variable », avec le nom « activité » écrit dans la case." width="350"/>
+<img src="images/variable-name.png" alt="La fenêtre « Nouveau nom de variable », avec le nom « activité » écrit dans la case." width="350" />
 
 --- /task ---
 
 Tu verras maintenant qu'il y a de nouveaux blocs disponibles. Ces blocs te permettent d'activer, de modifier ou d'utiliser la valeur stockée dans la variable `activité`{:class='microbitvariables'}.
 
-<img src="images/variable-blocks.png" alt="Le menu du bloc Variables avec de nouveaux blocs pour définir la valeur, modifier la valeur et utiliser la valeur de la variable « activité » dans ton code." width="350"/>
+<img src="images/variable-blocks.png" alt="Le menu du bloc Variables avec de nouveaux blocs pour définir la valeur, modifier la valeur et utiliser la valeur de la variable « activité » dans ton code." width="350" />
 
 --- task ---
 
 Fais glisser le bloc `définir`{:class='microbitvariables'} à l'intérieur du bloc `au démarrage`{:class='microbitbasic'}.
 
 ```microbit
-let activité = 0
+let activity = 0
 ```
 
 --- /task ---
@@ -206,7 +206,7 @@ Tu utiliseras des blocs `si... alors` pour faire cela.
 
 Ouvre le menu `Logique`{:class='microbitlogic'} et choisis le bloc `si`{:class='microbitlogic'}.
 
-<img src="images/if-block.png" alt="Le menu des blocs Logique s'ouvre avec le bloc « si » en surbrillance." width="350"/>
+<img src="images/if-block.png" alt="Le menu des blocs Logique s'ouvre avec le bloc « si » en surbrillance." width="350" />
 
 Fais glisser le bloc `si`{:class='microbitlogic'} à l'intérieur du bloc de boucle `toujours`{:class='microbitbasic'}. Place-le **au-dessus de** ton bloc `montrer l'icône`{:class='microbitbasic'}.
 
@@ -250,8 +250,8 @@ Change le deuxième `0` en `1`.
 
 ```microbit
 basic.forever(function () {
-    let activité = 0
-    if (activité == 1) {
+    let activity = 0
+    if (activity == 1) {
 
     }
     basic.showIcon(IconNames.Ghost)
@@ -266,8 +266,8 @@ Fais glisser ton bloc `montrer l'icône`{:class='microbitbasic'} **à l'intérie
 
 ```microbit
 basic.forever(function () {
-    let activité = 0
-    if (activité == 1) {
+    let activity = 0
+    if (activity == 1) {
         basic.showIcon(IconNames.Ghost)
     }
 })
@@ -303,7 +303,7 @@ Pour ajouter plus d'options de loisirs à ton programme, tu devras ajouter plus 
 
 Clique sur le symbole `+` en bas du bloc `si`. Cela créera un bloc `sinon`.
 
-<img src="images/if-plus-icon.png" alt="Le symbole + dans le coin inférieur gauche du bloc « si » à l'intérieur de la boucle « toujours »." width="250"/>
+<img src="images/if-plus-icon.png" alt="Le symbole + dans le coin inférieur gauche du bloc « si » à l'intérieur de la boucle « toujours »." width="250" />
 
 --- /task ---
 
@@ -341,12 +341,12 @@ Duplique le bloc `=`{:class='microbitlogic'} une fois de plus et fais-le glisser
 
 ```microbit
 basic.forever(function () {
-    let activité = 0
-    if (activité == 1) {
+    let activity = 0
+    if (activity == 1) {
         basic.showIcon(IconNames.Ghost)
-    } else if (activité == 2) {
+    } else if (activity == 2) {
 
-    } else if (activité == 3) {
+    } else if (activity == 3) {
 
     }
 })
@@ -370,11 +370,11 @@ title: Utiliser le bloc montrer leds
 
 À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `montrer leds`{:class='microbitbasic'} à l'intérieur d'un bloc `sinon si`{:class='microbitlogic'}.
 
-<img src="images/show-leds.png" alt="Le menu Base avec le bloc « montrer LEDs » en surbrillance." width="350"/>
+<img src="images/show-leds.png" alt="Le menu Base avec le bloc « montrer LEDs » en surbrillance." width="350" />
 
 Tu peux cliquer sur chacun des carrés pour choisir ceux que tu veux allumer. Des carrés blancs seront allumés sur le micro:bit.
 
-<img src="images/draw-icon.png" alt="Le bloc « montrer LEDs » avec un visage souriant créé en carrés blancs." width="350"/>
+<img src="images/draw-icon.png" alt="Le bloc « montrer LEDs » avec un visage souriant créé en carrés blancs." width="350" />
 
 --- /collapse ---
 
@@ -388,7 +388,7 @@ Tu peux cliquer sur chacun des carrés pour choisir ceux que tu veux allumer. De
 
 Fais glisser le bloc `lorsque secouer`{:class='microbitinput'} du menu `Entrée`{:class='microbitinput'}.
 
-<img src="images/on-shake.png" alt="Le menu Entrée avec le bloc « lorsque secouer » en surbrillance." width="350"/>
+<img src="images/on-shake.png" alt="Le menu Entrée avec le bloc « lorsque secouer » en surbrillance." width="350" />
 
 --- /task ---
 
@@ -402,14 +402,14 @@ Fais glisser le bloc `lorsque secouer`{:class='microbitinput'} du menu `Entrée`
 
 À partir du menu `Maths`{:class='microbitmath'}, fais glisser le bloc `choisir au hasard`{:class='microbitmath'} vers le bloc `0` du bloc `définir`{:class='microbitvariables'}.
 
-<img src="images/pick-random.png" alt="Le menu Maths avec le bloc « choisir au hasard de 0 à 10 » en surbrillance." width="350"/>
+<img src="images/pick-random.png" alt="Le menu Maths avec le bloc « choisir au hasard de 0 à 10 » en surbrillance." width="350" />
 
 Change les nombres `0 à 10` à `1 à 3`.
 
 ```microbit
-let activité = 0
+let activity = 0
 input.onGesture(Gesture.Shake, function () {
-    activité = randint(1, 3)
+    activity = randint(1, 3)
 })
 ```
 
@@ -423,19 +423,19 @@ Utilise le logo tactile (V2) ou un bouton (V1) pour éteindre les LED.
 
 Fais glisser le bloc `sur le logo appuyé`{:class='microbitinput'} depuis le menu `Entrée`{:class='microbitinput'}.
 
-<img src="images/onlogo-pressed.png" alt="Le menu Entrée avec le bloc « sur le logo appuyé » en surbrillance." width="350"/>
+<img src="images/onlogo-pressed.png" alt="Le menu Entrée avec le bloc « sur le logo appuyé » en surbrillance." width="350" />
 
 --- collapse ---
 
 ---
-title: Utilisateurs micro:bit V1
+title : Utilisateurs micro:bit V1
 ---
 
 L'entrée du logo n'est disponible que sur le micro:bit V2.
 
 Pour le micro:bit V1, utilise le bloc `lorsque le bouton`{:class='microbitinput'} du menu `Entrée`{:class='microbitinput'}.
 
-<img src="images/button-a.png" alt="Le menu Entrée avec le bloc « lorsque le bouton A pressé » en surbrillance." width="350"/>
+<img src="images/button-a.png" alt="Le menu Entrée avec le bloc « lorsque le bouton A pressé » en surbrillance." width="350" />
 
 --- /collapse ---
 
@@ -458,10 +458,10 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 Maintenant, fais glisser le bloc `définir`{:class='microbitvariables'} à partir du bloc `Variables`{:class='microbitvariables'} et place-le sous le bloc `effacer l'écran`{:class='microbitbasic'}.
 
 ```microbit
-let activité = 0
+let activity = 0
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.clearScreen()
-    activité = 0
+    activity = 0
 })
 ```
 
@@ -505,4 +505,3 @@ N’oubliez pas :
   + Ajouter un symbole différent à afficher pour chaque activité
   + Augmenter le nombre de blocs `sinon si` afin de pouvoir ajouter plus d'icônes
   + Augmenter la plage aléatoire à plus de trois pour correspondre au nombre de loisirs ajoutés
-
