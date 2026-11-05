@@ -1,0 +1,10 @@
+title: Hobby selector
+hero_image: images/banner.png
+description: Let your micro:bit choose a hobby for you
+version: 4
+listed: true
+copyedit: true
+last_tested: "2023-08-01"
+steps:
+  - 
+    title: Randomise your hobbies!
