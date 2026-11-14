@@ -56,7 +56,7 @@ Zodra de editor is geopend, moet je een nieuw project aanmaken en je project een
 
 Klik op de knop **Nieuw Project**.
 
-<img src="images/new-project-button.png" alt="De knop Nieuw project in MakeCode." width="250"/>
+<img src="images/new-project-button.png" alt="De knop Nieuw project in MakeCode." width="250" />
 
 --- /task ---
 
@@ -64,7 +64,7 @@ Klik op de knop **Nieuw Project**.
 
 Geef je nieuwe project de naam `Kies een hobby` en klik op **Aanmaken**.
 
-<img src="images/new-project.png" alt="De naam 'Kies een hobby' geschreven in het dialoogvenster een project maken." width="300"/>
+<img src="images/new-project.png" alt="De naam 'Kies een hobby' geschreven in het dialoogvenster een project maken." width="300" />
 
 **Tip:** Om het makkelijker te maken om je project later terug te vinden, geef het een logische naam die gerelateerd is aan de activiteit die je aan doen bent.
 
@@ -101,7 +101,7 @@ Je gaat het `de hele tijd` blok gebruiken om te zien hoe de LED's op de simulato
 
 Klik op het blokmenu `Basis`{:class='microbitbasic'} in het blokpaneel. Dit zal uitklappen om de beschikbare blokken te laten zien.
 
-<img src="images/basic-blocks.png" alt="Het basisblokmenu met het 'toon pictogram' blok geaccentueerd." width="300"/>
+<img src="images/basic-blocks.png" alt="Het basisblokmenu met het 'toon pictogram' blok geaccentueerd." width="300" />
 
 Sleep het `toon pictogram`{:class='microbitbasic'} blok en zet het neer **in** het `de hele tijd`{:class='microbitbasic'} blok. Het moet als een puzzelstuk op zijn plaats passen.
 
@@ -117,7 +117,7 @@ basic.forever(function () {
 
 Klik op de pijl omlaag op het Toon pictogram blok en kies een pictogram.
 
-<img src="images/show-icons.png" alt="Het Toon pictogram menu uitgeklapt met alle beschikbare iconen." width="300"/>
+<img src="images/show-icons.png" alt="Het Toon pictogram menu uitgeklapt met alle beschikbare iconen." width="300" />
 
 ![]()
 
@@ -170,7 +170,7 @@ Elke hobby wordt aan een getal gekoppeld en je maakt een variabele zodat je kunt
 
 Open het `Variabelen`{:class='microbitvariables'} menu en klik op **Maak een variabele**.
 
-<img src="images/variable-menu.png" alt="Het variabelenblokmenu wordt geopend met de knop 'Maak een variabele' gemarkeerd." width="350"/>
+<img src="images/variable-menu.png" alt="Het variabelenblokmenu wordt geopend met de knop 'Maak een variabele' gemarkeerd." width="350" />
 
 --- /task ---
 
@@ -178,20 +178,20 @@ Open het `Variabelen`{:class='microbitvariables'} menu en klik op **Maak een var
 
 Noem de nieuwe variabele `activiteit` en klik vervolgens op de knop **OK**.
 
-<img src="images/variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'activiteit' in het vak." width="350"/>
+<img src="images/variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'activiteit' in het vak." width="350" />
 
 --- /task ---
 
 Je zult nu zien dat er nieuwe blokken beschikbaar zijn. Met deze blokken kun je de waarde die is opgeslagen in de variabele `activiteit`{:class='microbitvariables'} instellen, wijzigen of gebruiken.
 
-<img src="images/variable-blocks.png" alt="Het variabelen blokmenu - met nieuwe blokken om de waarde in te stellen, te wijzigen en de waarde van de 'activiteit' variabele te gebruiken in je code." width="350"/>
+<img src="images/variable-blocks.png" alt="Het variabelen blokmenu - met nieuwe blokken om de waarde in te stellen, te wijzigen en de waarde van de 'activiteit' variabele te gebruiken in je code." width="350" />
 
 --- task ---
 
 Sleep het `stel in op`{:class='microbitvariables'} blok naar het bewerkingspaneel en plaats deze in het `bij opstarten`{:class='microbitbasic'} blok.
 
 ```microbit
-let activiteit = 0
+let activity = 0
 ```
 
 --- /task ---
@@ -204,11 +204,11 @@ Je gebruikt hiervoor `als... dan` blokken.
 
 --- task ---
 
-Vanuit het `Logisch`{:class='microbitlogic'} menu, kies het `als`{:class='microbitlogic'} blok.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, kies het `als`{:class="microbitlogic"} blok.
 
-<img src="images/if-block.png" alt="Het Logisch blokmenu geopend met het 'als' blok gemarkeerd." width="350"/>
+<img src="images/if-block.png" alt="Het Logisch blokmenu geopend met het 'als' blok gemarkeerd." width="350" />
 
-Sleep het `als`{:class='microbitlogic'} in het lus blok `de hele tijd`{:class='microbitbasic'}. Plaats het **boven** je `toon pictogram`{:class='microbitbasic'} blok.
+Sleep het `als`{:class="microbitlogic"} in het lus blok `de hele tijd`{:class="microbitbasic"}. Plaats het **boven** je `toon pictogram`{:class='microbitbasic'} blok.
 
 ```microbit
 basic.forever(function () {
@@ -225,7 +225,7 @@ basic.forever(function () {
 
 Vanuit het menu `Logisch`{:class='microbitlogic'} sleep je het vergelijkingsblok `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/condition-block.png" alt="Het Logisch blokmenu met het vergelijkingsblok '0 = 0' gemarkeerd." width="350"/>
+<img src="images/condition-block.png" alt="Het Logisch blokmenu met het vergelijkingsblok '0=0' gemarkeerd." width="350" />
 
 Plaats dit in het `waar`{:class='microbitlogic'} deel van het `als`{:class='microbitlogic'} blok.
 
@@ -250,9 +250,9 @@ Verander de tweede `0` in `1`.
 
 ```microbit
 basic.forever(function () {
-    let activiteit = 0
-    if (activiteit == 1) {
-        
+    let activity = 0
+    if (activity == 1) {
+
     }
     basic.showIcon(IconNames.Ghost)
 })
@@ -266,8 +266,8 @@ Sleep je `toon pictogram`{:class='microbitbasic'} blok **binnen** het `als`{:cla
 
 ```microbit
 basic.forever(function () {
-    let activiteit = 0
-    if (activiteit == 1) {
+    let activity = 0
+    if (activity == 1) {
         basic.showIcon(IconNames.Ghost)
     }
 })
@@ -303,7 +303,7 @@ Om meer hobbyopties aan je programma toe te voegen, moet je meer voorwaarden toe
 
 Klik op het `+` -symbool onderaan het `als` -blok. Hierdoor wordt een `anders` blok gemaakt.
 
-<img src="images/if-plus-icon.png" alt="Het + symbool in de linker onderhoek van het 'als blok' in de 'de hele tijd' lus." width="250"/>
+<img src="images/if-plus-icon.png" alt="Het + symbool in de linker onderhoek van het 'als blok' in de 'de hele tijd' lus." width="250" />
 
 --- /task ---
 
@@ -341,12 +341,12 @@ Dupliceer het `=`{:class='microbitlogic'} blok nog één keer en sleep het naar 
 
 ```microbit
 basic.forever(function () {
-    let activiteit = 0
-    if (activiteit == 1) {
+    let activity = 0
+    if (activity == 1) {
         basic.showIcon(IconNames.Ghost)
-    } else if (activiteit == 2) {
+    } else if (activity == 2) {
 
-    } else if (activiteit == 3) {
+    } else if (activity == 3) {
 
     }
 })
@@ -370,11 +370,11 @@ title: Gebruik het toon lichtjes blok
 
 Vanuit het `Basis`{:class='microbitbasic'} menu sleep je het `Toon lichtjes`{:class='microbitbasic'} blok in een `als dan`{:class='microbitlogic'} blok.
 
-<img src="images/show-leds.png" alt="Het basismenu met het 'toon lichtjes'-blok gemarkeerd." width="350"/>
+<img src="images/show-leds.png" alt="Het basismenu met het 'toon lichtjes'-blok gemarkeerd." width="350" />
 
 Je kunt op elk van de vierkanten klikken om te kiezen welke je wilt laten oplichten. Witte vierkantjes worden verlicht op de micro:bit.
 
-<img src="images/draw-icon.png" alt="Het 'toon lichtjes' blok met een smiley gemaakt van witte vierkanten." width="350"/>
+<img src="images/draw-icon.png" alt="Het 'toon lichtjes' blok met een smiley gemaakt van witte vierkanten." width="350" />
 
 --- /collapse ---
 
@@ -388,7 +388,7 @@ Je kunt op elk van de vierkanten klikken om te kiezen welke je wilt laten oplich
 
 Sleep het `bij schudden`{:class='microbitinput'} uit het menu `Invoer`{:class='microbitinput'}.
 
-<img src="images/on-shake.png" alt="Het invoermenu met het 'bij schudden' blok gemarkeerd." width="350"/>
+<img src="images/on-shake.png" alt="Het invoermenu met het 'bij schudden' blok gemarkeerd." width="350" />
 
 --- /task ---
 
@@ -402,14 +402,14 @@ Vanuit het `Variabelen`{:class='microbitvariables'} menu, sleep je het `stel in 
 
 Van het `Rekenen`{:class='microbitmath'} menu, sleep het `kies willekeurig`{:class='microbitmath'} blok naar het `0` blok van de `stel in op`{:class='microbitvariables'} blok.
 
-<img src="images/pick-random.png" alt="Het Rekenen menu met het blok 'kies willekeurig 0 tot 10' gemarkeerd." width="350"/>
+<img src="images/pick-random.png" alt="Het Rekenen menu met het blok 'kies willekeurig 0 tot 10' gemarkeerd." width="350" />
 
 Verander de getallen `0 tot 10` in `1 tot 3`.
 
 ```microbit
-let activiteit = 0
+let activity = 0
 input.onGesture(Gesture.Shake, function () {
-    activiteit = randint(1, 3)
+    activity = randint(1, 3)
 })
 ```
 
@@ -423,7 +423,7 @@ Gebruik het logo (V2) of een knop (V1) om de LED's uit te schakelen.
 
 Sleep het `bij logo ingedrukt`{:class='microbitinput'} blok uit het `Invoer`{:class='microbitinput'} menu.
 
-<img src="images/onlogo-pressed.png" alt="Het invoermenu met het 'bij logo ingedrukt' blok gemarkeerd." width="350"/>
+<img src="images/onlogo-pressed.png" alt="Het invoermenu met het 'bij logo ingedrukt' blok gemarkeerd." width="350" />
 
 --- collapse ---
 
@@ -435,7 +435,7 @@ De logo-invoer is alleen beschikbaar op de V2 micro:bit.
 
 Voor de V1 micro:bit, gebruik het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok van het `Invoer`{:class='microbitinput'} menu.
 
-<img src="images/button-a.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok gemarkeerd." width="350"/>
+<img src="images/button-a.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok gemarkeerd." width="350" />
 
 --- /collapse ---
 
@@ -443,7 +443,7 @@ Voor de V1 micro:bit, gebruik het `wanneer knop wordt ingedrukt`{:class='microbi
 
 --- task ---
 
-Sleep het `wis scherm`{:class='microbitbasic'} blok uit het `Basis`{:class='microbitbasic'} menu en plaats het in het `bij logo ingedrukt`{:class='microbitinput'} blok (of het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok voor V1).
+Sleep het `wis scherm`{:class='microbitbasic'} blok uit het `Basis`{:class='microbitbasic'} menu en plaats het in het `bij logo ingedrukt`{:class='microbitbasic'} blok (of het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok voor V1).
 
 ```microbit
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -458,10 +458,10 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 Sleep nu het `stel in op`{:class='microbitvariables'} blok van het `Variabelen`{:class='microbitvariables'} menu en plaats het onder het `wis scherm`{:class='microbitbasic'} blok.
 
 ```microbit
-let activiteit = 0
+let activity = 0
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.clearScreen()
-    activiteit = 0
+    activity = 0
 })
 ```
 
@@ -505,4 +505,3 @@ Vergeet niet om:
   + Een ander symbool toe te voegen om elke nieuwe activiteit
   + Verhoog het aantal `anders als` blokken zodat je meer iconen kunt toevoegen
   + Verhoog het willekeurige bereik tot meer dan drie zodat het overeen komt met het aantal toegevoegde hobby's
-
